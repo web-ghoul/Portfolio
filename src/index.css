@@ -1,0 +1,227 @@
+:root{
+  --ubuntu-font:'Ubuntu', sans-serif;
+  --cairo-font:'Cairo', sans-serif;
+  --tran: ease-in-out all .3s;
+  --main:#00aeff;
+  --main-alt:#0099e5;
+  --white:#fff;
+  --black:#111;
+  --black-alt:#222;
+  --youtube:#ff0000;
+  --linkedin:#0a66c2;
+  --facebook:#1877f2;
+  --instagram:#fcaf45;
+  --gmail:#ea4335;
+  --whatsapp:#25d366;
+  --github:#333;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
+  font-family: var(--cairo-font) !important;
+  text-transform: capitalize;
+}
+
+body{
+  font-family: var(--cairo-font) !important;
+  position: relative;
+}
+
+form input ,form textarea,form  textarea::placeholder ,form  input::placeholder{
+  color: var(--white) !important;
+  opacity: 1 !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--white);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+.flex{
+  display: flex !important;
+}
+
+.grid{
+  display: grid !important;
+}
+
+.jcc{
+  justify-content: center !important;
+}
+
+.jcfs{
+  justify-content: flex-start !important;
+}
+
+.jcfe{
+  justify-content: flex-end !important;
+}
+
+.jcsb{
+  justify-content: space-between !important;
+}
+
+.jcs{
+  justify-content: stretch !important;
+}
+
+.aic{
+  align-items: center !important;
+}
+
+.aifs{
+  align-items: flex-start !important;
+}
+
+.asfs{
+  align-self: flex-start !important;
+}
+
+.acfs{
+  align-content: flex-start !important;
+}
+
+.tac{
+  text-align: center !important;
+}
+
+.ttuc{
+  text-transform: uppercase !important;
+}
+
+.gs{
+  gap: 10px !important;
+}
+
+.gm{
+  gap: 20px !important;
+}
+
+.gl{
+  gap: 30px !important;
+}
+
+.gl1{
+  gap: 40px !important;
+}
+
+.gl2{
+  gap: 50px !important;
+}
+
+.rel{
+  position: relative;
+}
+
+.ubuntu-font{
+  font-family: var(--ubuntu-font) !important;
+}
+
+.fw600{
+  font-weight: 600 !important;
+}
+
+.fw700{
+  font-weight: 700 !important;
+}
+
+.fw800{
+  font-weight: 800 !important;
+}
+
+.MuiSwitch-track{
+  background-color: var(--white) !important;
+}
+
+.header_btn{
+  color: var(--white) !important;
+}
+
+/* My Button */
+
+
+
+.border{
+  background-color: var(--white);
+  padding: 4px;
+  position: relative;
+}
+
+.border::after{
+  content: "";
+  position: absolute;
+  left:-20%;
+  top:50%;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 50%;
+  background-color:var(--main);
+  transition: var(--tran);
+  animation-name: border_motion;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes border_motion {
+  50%{
+      left: 100%;
+  }
+  100%{
+      left: -20%;
+  }
+}
+
+
+@media (max-width:992px) {
+  .gs{
+    gap: 8px !important;
+  }
+  
+  .gm{
+    gap: 16px !important;
+  }
+  
+  .gl{
+    gap: 25px !important;
+  }
+  
+  .gl1{
+    gap: 30px !important;
+  }
+  
+  .gl2{
+    gap: 40px !important;
+  }
+  
+}
+
+@media (max-width:768px) {
+  .gs{
+    gap: 5px !important;
+  }
+  
+  .gm{
+    gap: 10px !important;
+  }
+  
+  .gl{
+    gap: 20px !important;
+  }
+  
+  .gl1{
+    gap: 25px !important;
+  }
+  
+  .gl2{
+    gap: 30px !important;
+  }
+  
+}

@@ -1,0 +1,45 @@
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transform: translateY(5px);
+}
+
+.line{
+    background-color: var(--white);
+    width:5px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+@media (max-width:1200px) {
+    .circle{
+        width: 35px;
+        height: 35px;
+        transform: translateY(0px);
+    }
+    
+    .line{
+        width:4px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width:992px) {
+    .circle{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .line{
+        width:3px;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width:768px) {
+    .circle{
+        width: 25px;
+        height: 25px;
+    }
+}

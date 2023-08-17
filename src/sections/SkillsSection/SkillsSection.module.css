@@ -1,0 +1,10 @@
+.skills{
+    flex-wrap: wrap;
+}
+
+
+@media (max-width:768px) {
+    .skills_contain > div{
+        justify-content: center !important;
+    }
+}

@@ -1,0 +1,77 @@
+.about_section_dark{
+    background-color: var(--black-alt);
+}
+
+.info{
+    align-self: flex-end;
+}
+
+.photo_cover{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    align-self: flex-end;
+}
+
+.photo_cover img{
+    width: 150px;
+    height: 150px;
+    transform: scale(1.8) translateX(-10px);
+    border-radius: 50%;
+}
+
+.facebook_icon, .github_icon, .linkedin_icon,.facebook_icon svg , .github_icon svg, .linkedin_icon svg{
+    transition: var(--tran);
+}
+
+.facebook_icon:hover, .github_icon:hover, .linkedin_icon:hover{
+    background-color: var(--white) !important;
+}
+
+.facebook_icon:hover svg{
+    color: var(--facebook);
+}
+
+.github_icon:hover svg{
+    color: var(--github);
+}
+
+.linkedin_icon:hover svg{
+    color: var(--linkedin);
+}
+
+@media (max-width:768px) {
+    .about_contain{
+        display: grid !important;
+    }
+
+    .about_part{
+        justify-content: center !important;
+        text-align: center !important;
+    }
+
+    .about_part > div{
+        justify-content: center !important;
+    }
+
+    .info{
+        align-self: center;
+        order: 1;
+        justify-content: center !important;
+    }
+    
+    .photo_cover{
+        width: 120px;
+        height: 120px;
+        align-self: center;
+    }
+    
+    .photo_cover img{
+        width: 120px;
+        height: 120px;
+    }
+}
