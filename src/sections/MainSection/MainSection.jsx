@@ -8,7 +8,7 @@ import {MyButton} from "../../muiComponentsStyled/MyButton/MyButton"
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
 
 //Images and PDFS Files
-import resume from "../../static/webGhoul_CV.pdf"
+import resume from "../../static/Mahmoud_Salama_CV.pdf"
 import photo from "../../static/images/photo.jpg"
 
 //Styles File
@@ -28,7 +28,7 @@ const MainSection = () => {
                 <Typography variant='h5' className={`${mode === "dark" ? styles.dark : styles.light}`}>Front-End Developer</Typography>
               </Box>
               <Box className={`flex jcfs aic gs`}  sx={{zIndex:100}}>
-                <a href={resume} download="webGhoul_CV">
+                <a href={resume} download="mahmoud_salama_cv">
                   <MyButton type="submit"  className={mode === "light" ? `my_btn flex jcc aic gs`:`my_btn_alt my_btn flex jcc aic gs`}>
                     <CloudDownloadIcon fontSize="large"/>
                     Resume

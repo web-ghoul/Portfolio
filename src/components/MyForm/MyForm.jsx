@@ -6,7 +6,6 @@ import { Formik } from "formik";
 //YUP Package
 import * as yup from "yup";
 
-
 //Sweet Alert 2 Package
 import swal from "sweetalert2";
 
@@ -21,7 +20,7 @@ import styles from "./MyForm.module.css";
 //Validation Schema With YUP to validate inputs of Contact Form
 const validateSchema = yup.object().shape({
   name: yup.string().required(),
-  email: yup.string().email().required(),
+  email: yup.string().matches(/^([\w]*[\w\.]*(?!\.)@gmail.com)/,"enter your gmail").required(),
   subject: yup.string(),
   message: yup.string().required(),
 });
