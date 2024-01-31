@@ -20,6 +20,7 @@ import styles from "./AboutSection.module.css";
 const AboutSection = () => {
 
     const mode = useSelector((state) => state.theme.mode)
+    const { links } = useSelector((state) => state.links)
 
     return (
         <MyBox className={`${mode === "dark" ? styles.about_section_dark : styles.about_section}`}>
@@ -30,15 +31,21 @@ const AboutSection = () => {
                     </Box>
                     <Typography variant='h5' className={`tac`}>webGhoul</Typography>
                     <Box className={`flex jcc aic gs`}>
-                        <IconButton className={`flex jcc aic ${styles.facebook_icon}`}>
-                            <FacebookIcon fontSize='large' />
-                        </IconButton>
-                        <IconButton className={`flex jcc aic ${styles.linkedin_icon}`}>
-                            <LinkedInIcon fontSize='large' />
-                        </IconButton>
-                        <IconButton className={`flex jcc aic ${styles.github_icon}`}>
-                            <GitHubIcon fontSize='large' />
-                        </IconButton>
+                        <a href={links.facebook} target="_blank" rel="noreferrer">
+                            <IconButton className={`flex jcc aic ${styles.facebook_icon}`}>
+                                <FacebookIcon fontSize='large' />
+                            </IconButton>
+                        </a>
+                        <a href={links.linkedin} target="_blank" rel="noreferrer">
+                            <IconButton className={`flex jcc aic ${styles.linkedin_icon}`}>
+                                <LinkedInIcon fontSize='large' />
+                            </IconButton>
+                        </a>
+                        <a href={links.github} target="_blank" rel="noreferrer">
+                            <IconButton className={`flex jcc aic ${styles.github_icon}`}>
+                                <GitHubIcon fontSize='large' />
+                            </IconButton>
+                        </a>
                     </Box>
                 </Box>
                 <Box className={`grid jcfs aic gm ${styles.about_part}`}>

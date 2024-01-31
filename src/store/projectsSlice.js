@@ -1,21 +1,32 @@
 import { createSlice } from "@reduxjs/toolkit"
-import newsImg from "../static/images/news_project.png"
-import blogImg from "../static/images/blog_project.png"
-import tournamentImg from "../static/images/tournament_project.png"
 import alCazarImg from "../static/images/alcazar.png"
+import blogImg from "../static/images/blog_project.png"
 import cashierImg from "../static/images/cashier_project.png"
 import codingForEveryone from "../static/images/coding_for_everyone.png"
-import webGhoulCalcImg from "../static/images/webGhoulCalcImg.jpeg"
-import toDo from "../static/images/todo_app.png"
+import Dagagino from "../static/images/dagagino.png"
 import jquery1 from "../static/images/jquery1.png"
 import jquery2 from "../static/images/jquery2.png"
 import jquery3 from "../static/images/jquery3.png"
+import newsImg from "../static/images/news_project.png"
+import toDo from "../static/images/todo_app.png"
+import tournamentImg from "../static/images/tournament_project.png"
+import webGhoulCalcImg from "../static/images/webGhoulCalcImg.jpeg"
 
 const initialState = {
     projects: [
         {
+            "img": Dagagino,
+            "title": "Dagagino",
+            "role": "Frontend Developer",
+            "description": "Application to Manage Products of Sellers for Customers. (Freelance)",
+            "links": {
+                "preview": "https://dagagino.com.om/"
+            },
+            "skills": ["Next", "Material UI", "Redux Toolkit"],
+        },
+        {
             "img": alCazarImg,
-            "title": "AlCazar Ecommerce Application",
+            "title": "AlCazar",
             "role": "MERN Stack Developer",
             "description": "Application to Buy Furnitures for Customers.",
             "links": {
@@ -27,7 +38,7 @@ const initialState = {
         },
         {
             "img": tournamentImg,
-            "title": "Tournament Application",
+            "title": "Chess Tournament",
             "role": "Frontend Developer",
             "description": "Application to help Players to management the Competition",
             "links": {
@@ -61,7 +72,7 @@ const initialState = {
         },
         {
             "img": newsImg,
-            "title": "News Management Application",
+            "title": "News Management",
             "role": "Desktop Developer",
             "description": "Desktop Application As Data Structure Project For College",
             "links": {
