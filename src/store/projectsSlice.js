@@ -28,7 +28,7 @@ const initialState = {
             "img": alCazarImg,
             "title": "AlCazar",
             "role": "MERN Stack Developer",
-            "description": "Application to Buy Furnitures for Customers.",
+            "description": "Application to Sell Furnitures for Customers.",
             "links": {
                 "preview": "https://alcazarfinewood.vercel.app/",
                 "github": "https://github.com/web-ghoul/AlCazar"
