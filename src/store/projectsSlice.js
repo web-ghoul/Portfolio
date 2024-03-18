@@ -15,16 +15,6 @@ import webGhoulCalcImg from "../static/images/webGhoulCalcImg.jpeg"
 const initialState = {
     projects: [
         {
-            "img": Dagagino,
-            "title": "Dagagino",
-            "role": "Frontend Developer",
-            "description": "Application to Manage Products of Sellers for Customers. (Freelance)",
-            "links": {
-                "preview": "https://dagagino.com.om/"
-            },
-            "skills": ["Next", "Material UI", "Redux Toolkit"],
-        },
-        {
             "img": alCazarImg,
             "title": "AlCazar",
             "role": "MERN Stack Developer",
