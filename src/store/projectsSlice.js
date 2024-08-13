@@ -83,17 +83,6 @@ const initialState = {
             "skills": ["HTML5", "CSS3", "Javascript", "React", "Firebase", "API"],
         },
         {
-            "img": newsImg,
-            "title": "News Management",
-            "role": "Desktop Developer",
-            "description": "Desktop Application As Data Structure Project For College",
-            "links": {
-                "preview": "https://www.linkedin.com/posts/mahmoud-salama-23b627211_qt-cpp-desktopapplications-activity-7074419155893952514-u7yA?utm_source=share&utm_medium=member_desktop",
-                "github": "https://github.com/web-ghoul/News-Management-App"
-            },
-            "skills": ["QT", "SQLITE"],
-        },
-        {
             "img": codingForEveryone,
             "title": "Coding For Everyone",
             "role": "Frontend Developer",
