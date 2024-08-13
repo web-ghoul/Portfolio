@@ -20,7 +20,7 @@ const initialState = {
             "img": sabaaImg,
             "title": "SABAA",
             "role": "Front End Developer",
-            "description": "Application to Manage Employee of Companies in Dubai",
+            "description": "Application to Manage Employee of Companies in Dubai login email is admin@gmail.com and password is 123123123",
             "links": {
                 "preview": "https://sabaatyping.com/"
             },
