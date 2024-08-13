@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit"
 import alCazarImg from "../static/images/alcazar.png"
+import dagaginoImg from "../static/images/dagagino.png"
+import sabaaImg from "../static/images/sabaa.png"
 import blogImg from "../static/images/blog_project.png"
 import cashierImg from "../static/images/cashier_project.png"
 import codingForEveryone from "../static/images/coding_for_everyone.png"
@@ -14,6 +16,26 @@ import webGhoulCalcImg from "../static/images/webGhoulCalcImg.jpeg"
 
 const initialState = {
     projects: [
+           {
+            "img": sabaaImg,
+            "title": "SABAA",
+            "role": "Front End Developer",
+            "description": "Application to Manage Employee of Companies in Dubai",
+            "links": {
+                "preview": "https://sabaatyping.com/"
+            },
+            "skills": ["React", "Material UI", "Redux Toolkit" , "React Hook Form"],
+        },
+        {
+            "img": dagaginoImg,
+            "title": "Dagagino",
+            "role": "Front End Developer",
+            "description": "Application to Sell Chicken feed for Customers.",
+            "links": {
+                "preview": "https://dagagino.com.om/"
+            },
+            "skills": ["Next","React", "Material UI", "Redux Toolkit","Formik","Yup"],
+        },
         {
             "img": alCazarImg,
             "title": "AlCazar",
