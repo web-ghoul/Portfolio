@@ -42,7 +42,7 @@ const initialState = {
             "role": "MERN Stack Developer",
             "description": "Application to Sell Furnitures for Customers.",
             "links": {
-                "preview": "https://alcazarfinewood.vercel.app/",
+                "preview": "https://al-cazar.vercel.app/",
                 "github": "https://github.com/web-ghoul/AlCazar"
             },
             "skills": ["Next", "Material UI", "Redux Toolkit", "Node", "Node",
