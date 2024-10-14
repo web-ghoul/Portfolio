@@ -1,9 +1,0 @@
-.parent_button{
-    position: fixed !important;
-    right: 40px ;
-    bottom: 40px ;
-}
-
-.parent_button > button{
-    background-color:var(--main) !important;
-}
