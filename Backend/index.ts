@@ -1,6 +1,7 @@
 import cors from 'cors';
 import { config } from 'dotenv';
 import express, { Request, Response } from 'express';
+import dbConnection from './db/db';
 config();
 
 const app = express();
@@ -13,6 +14,9 @@ const corsOptions = {
   credentials: true,
 };
 app.use(cors(corsOptions));
+
+//Connect Dataase
+dbConnection();
 
 // Define a route
 app.get('/', (req: Request, res: Response) => {
