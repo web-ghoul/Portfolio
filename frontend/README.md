@@ -16,6 +16,7 @@ Helper Libraries:
 
 Helper Components:
 1- https://ui.aceternity.com/
+2- https://ui.aceternity.com/components/timeline
 
 Features:
 1- Blogs
