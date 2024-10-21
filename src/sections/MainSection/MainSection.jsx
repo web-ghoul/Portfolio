@@ -28,7 +28,7 @@ const MainSection = () => {
             <Typography variant='h5' className={`${mode === "dark" ? styles.dark : styles.light}`}>MERN-Stack Developer</Typography>
           </Box>
           <Box className={`flex jcfs aic gs`} sx={{ zIndex: 100 }}>
-            <a href={resume} download="mahmoud_salama">
+            <a href={resume} download="mahmoud_salama_cv">
               <MyButton type="submit" className={mode === "light" ? `my_btn flex jcc aic gs` : `my_btn_alt my_btn flex jcc aic gs`}>
                 <CloudDownloadIcon fontSize="large" />
                 Resume
