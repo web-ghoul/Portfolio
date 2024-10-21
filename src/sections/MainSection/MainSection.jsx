@@ -8,7 +8,7 @@ import { MyBox } from "../../muiComponentsStyled/MyBox/MyBox"
 import { MyButton } from "../../muiComponentsStyled/MyButton/MyButton"
 
 //Images and PDFS Files
-import resume from "../../static/Mahmoud_Salama_CV.pdf"
+import resume from "../../static/mahmoud_salama.pdf"
 import photo from "../../static/images/photo.jpg"
 
 //Styles File
