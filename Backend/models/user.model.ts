@@ -17,6 +17,11 @@ const UserSchema: Schema<UserTypes> = new Schema<UserTypes>(
       required: [true, 'email is required'],
       unique: true,
     },
+    password: {
+      type: String,
+      required: [true, 'password is required'],
+      unique: true,
+    },
     type: {
       type: String,
       default: 'user',

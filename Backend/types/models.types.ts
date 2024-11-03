@@ -4,6 +4,7 @@ interface UserTypes extends Document {
   avatar: string;
   username: string;
   email: string;
+  password: string;
   type: 'admin' | 'user';
 }
 
