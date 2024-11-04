@@ -10,11 +10,10 @@ const AboutSection = () => {
             second rule of MRR Club is you DO NOT talk about MRR Club.
           </p>
         }
-        className="h-[40rem]"
       >
-        The first rule of <span className="text-red-500">MRR Club</span> is you
+        The first rule of <span className="text-primary">MRR Club</span> is you
         do not talk about MRR Club. The second rule of MRR Club is you DO NOT
-        talk about <span className="text-red-500">MRR Club</span>.
+        talk about <span className="text-primary">MRR Club</span>.
       </MaskContainer>
     </section>
   );

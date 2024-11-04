@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
 const squareData = [
   {
@@ -69,7 +69,7 @@ const squareData = [
   },
 ];
 
-const ShuffleGrid = () => {
+const ShuffleGrid = ({ children }: { children: ReactNode }) => {
   const timeoutRef = useRef<any>(null);
   const [squares, setSquares] = useState(generateSquares());
 
@@ -85,9 +85,15 @@ const ShuffleGrid = () => {
   };
 
   return (
-    <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
-      {squares.map(sq => sq)}
-    </div>
+    <>
+      <div className="grid grid-cols-4 grid-rows-4 h-[75%] w-[75%] gap-2 absolute z-[0] left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
+        <div
+          className={`bg-[rgba(0,0,0,0.5)] absolute left-0 top-0 w-full h-full z-[100]`}
+        />
+        {squares.map(sq => sq)}
+      </div>
+      {children}
+    </>
   );
 };
 

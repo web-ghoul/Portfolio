@@ -27,3 +27,14 @@ Features:
 3- Rate Portfolio
 4- Testimonials
 5- Estimate Project Flow
+
+Notes :
+1- Set My Image as Background Image At About Section
+2- https://ui.aceternity.com/components/sidebar For Dashbaord
+3- https://ui.aceternity.com/components/hero-highlight For Titles
+4- https://ui.aceternity.com/components/card-hover-effect For Projects Boxes
+5- https://ui.aceternity.com/components/apple-cards-carousel For Services Section
+6- https://ui.aceternity.com/components/background-lines For Estimate Project Section
+7- https://ui.aceternity.com/components/background-beams-with-collision For Contact Section
+8- https://ui.aceternity.com/components/floating-dock For Socila Media Modal
+9- https://ui.aceternity.com/components/file-upload For Upload Image of Project or Blog

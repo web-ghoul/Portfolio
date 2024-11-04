@@ -1,17 +1,17 @@
 'use client';
+import { ReactLenis } from '@studio-freight/react-lenis';
 import {
   motion,
   useMotionTemplate,
   useScroll,
   useTransform,
 } from 'framer-motion';
-import { ReactLenis } from 'lenis/dist/lenis-react';
 import { useRef } from 'react';
 import { FiMapPin } from 'react-icons/fi';
 
 const ProjectsSection = () => {
   return (
-    <section className="bg-black">
+    <section className="bg-black contain_x contain_y">
       <ReactLenis
         root
         options={{

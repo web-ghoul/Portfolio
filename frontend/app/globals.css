@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --black: #000;
+  --primary: #4a87ce;
+  --secondary: #ff3131;
 }
 
 * {
@@ -14,22 +16,12 @@
 }
 
 body {
-  color: var(--background);
-  background: var(--foreground);
+  color: var(--white);
+  background: var(--black);
   padding: 0;
   margin: 0;
   width: 100vw !important;
   overflow-x: hidden;
-  height: 200vh;
-}
-
-.glassy {
-  background: rgba(0, 0, 0, 0.33);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 0, 0, 1);
 }
 
 main {
@@ -37,6 +29,27 @@ main {
   width: 100vw !important;
 }
 
+/*Components*/
+.contain_x {
+  padding-left: 100px !important;
+  padding-right: 100px !important;
+}
+
+.contain_y {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.glassy {
+  background: rgba(0, 0, 0, 0.33);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+/*Components*/
+
+/*Scroll Bar*/
 ::-webkit-scrollbar-track {
   background-color: #000;
 }
@@ -51,6 +64,7 @@ main {
   background-color: #000;
   border-radius: 0px;
 }
+/*Scroll Bar*/
 
 @layer utilities {
 }

@@ -42,11 +42,11 @@ export const MaskContainer = ({
       ref={containerRef}
       className={cn('h-screen relative', className)}
       animate={{
-        backgroundColor: isHovered ? '#111' : 'var(--black)',
+        backgroundColor: isHovered ? '#000' : 'var(--black)',
       }}
     >
       <motion.div
-        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-white/[0.2] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
+        className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-[rgba(255,255,255,0.2)] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
         animate={{
           maskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
@@ -57,6 +57,10 @@ export const MaskContainer = ({
           duration: 0,
         }}
       >
+        <div
+          style={{ backgroundImage: `url("/images/webGhoul.jpg")` }}
+          className={`w-full bg-cover bg-center bg-no-repeat h-full absolute z-[-1]`}
+        />
         <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
         <div
           onMouseEnter={() => {
@@ -70,8 +74,7 @@ export const MaskContainer = ({
           {children}
         </div>
       </motion.div>
-
-      <div className="w-full h-full flex items-center justify-center text-white">
+      <div className="w-full h-full flex items-center justify-center text-white px-20">
         {revealText}
       </div>
     </motion.div>

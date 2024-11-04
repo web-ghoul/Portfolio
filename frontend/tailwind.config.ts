@@ -15,8 +15,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: 'var(--background)',
-        foreground: 'var(--foreground)',
+        white: 'var(--white)',
+        black: 'var(--black)',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
       },
       animation: {
         first: 'moveVertical 30s ease infinite',
@@ -122,4 +124,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ':root': newVars,
   });
 }
+
 export default config;
