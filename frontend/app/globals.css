@@ -31,8 +31,8 @@ main {
 
 /*Components*/
 .contain_x {
-  padding-left: 100px !important;
-  padding-right: 100px !important;
+  padding-left: 120px !important;
+  padding-right: 120px !important;
 }
 
 .contain_y {

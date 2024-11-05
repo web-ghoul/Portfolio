@@ -1,9 +1,13 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Link, { LinkProps } from 'next/link';
+import React, { ReactNode } from 'react';
 import Logo from '../Logo/Logo';
+
+interface HoveredLinkProps extends LinkProps {
+  children: ReactNode;
+}
 
 const transition = {
   type: 'spring',
@@ -19,11 +23,13 @@ export const MenuItem = ({
   active,
   item,
   children,
+  link,
 }: {
   setActive: (item: string) => void;
   active: string | null;
   item: string;
   children?: React.ReactNode;
+  link?: string;
 }) => {
   return (
     <div onMouseEnter={() => setActive(item)} className="relative">
@@ -31,9 +37,9 @@ export const MenuItem = ({
         transition={{ duration: 0.3 }}
         className="cursor-pointer hover:opacity-[0.9] text-white"
       >
-        {item}
+        {link ? <Link href={link}>{item}</Link> : item}
       </motion.p>
-      {active !== null && (
+      {!link && active !== null && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85, y: 10 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -71,7 +77,7 @@ export const Menu = ({
       className="relative !rounded-full glassy border  border-[#222] shadow-input flex justify-between items-center !px-4 h-[70px]"
     >
       <Logo />
-      <div className="flex justify-end items-center gap-4 px-4">{children}</div>
+      <div className="flex justify-end items-center gap-8 px-4">{children}</div>
     </nav>
   );
 };
@@ -104,7 +110,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
     <Link {...rest} className="text-neutral-200 hover:text-black ">
       {children}

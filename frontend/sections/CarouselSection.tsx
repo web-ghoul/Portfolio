@@ -13,7 +13,7 @@ const SPRING_OPTIONS = {
   damping: 50,
 };
 
-export const Carousel = ({ images }: { images: string[] }) => {
+export const CarouselSection = ({ images }: { images: string[] }) => {
   const [imgIndex, setImgIndex] = useState(0);
 
   const dragX = useMotionValue(0);

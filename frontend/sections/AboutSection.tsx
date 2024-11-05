@@ -2,7 +2,7 @@ import { MaskContainer } from '@/components/ui/svg-mask-effect';
 
 const AboutSection = () => {
   return (
-    <section className="h-screen w-full flex items-center justify-center  overflow-hidden">
+    <section className="min-h-screen w-full flex items-center justify-center overflow-hidden">
       <MaskContainer
         revealText={
           <p className="text-white text-center text-4xl font-bold">

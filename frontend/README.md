@@ -38,3 +38,4 @@ Notes :
 7- https://ui.aceternity.com/components/background-beams-with-collision For Contact Section
 8- https://ui.aceternity.com/components/floating-dock For Socila Media Modal
 9- https://ui.aceternity.com/components/file-upload For Upload Image of Project or Blog
+10- https://www.hover.dev/components/dropdown-menu (Staggered Dropdown) For Navbar in Mobile Screen

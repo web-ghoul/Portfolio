@@ -17,15 +17,17 @@ export const MaskContainer = ({
   className?: string;
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [mousePosition, setMousePosition] = useState<any>({ x: null, y: null });
-  const containerRef = useRef<any>(null);
-  const updateMousePosition = (e: any) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    setMousePosition({ x: e.clientX - rect.left, y: e.clientY - rect.top });
+  const [mousePosition, setMousePosition] = useState<{ x: number | null; y: number | null }>({ x: null, y: null });
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const updateMousePosition = (e: MouseEvent) => {
+    const rect = containerRef.current && containerRef.current.getBoundingClientRect();
+    setMousePosition({ x: rect ? (e.clientX - rect.left): 0, y: rect ? (e.clientY - rect.top):0 });
   };
 
   useEffect(() => {
-    containerRef.current.addEventListener('mousemove', updateMousePosition);
+    if(containerRef.current){
+      containerRef.current.addEventListener('mousemove', updateMousePosition);
+    }
     return () => {
       if (containerRef.current) {
         containerRef.current.removeEventListener(
@@ -35,7 +37,7 @@ export const MaskContainer = ({
       }
     };
   }, []);
-  let maskSize = isHovered ? revealSize : size;
+  const maskSize = isHovered ? revealSize : size;
 
   return (
     <motion.div
@@ -47,12 +49,12 @@ export const MaskContainer = ({
     >
       <motion.div
         className="w-full h-full flex items-center justify-center text-6xl absolute bg-black bg-grid-[rgba(255,255,255,0.2)] text-white [mask-image:url(/mask.svg)] [mask-size:40px] [mask-repeat:no-repeat]"
-        animate={{
+        animate={(mousePosition.x && mousePosition.y)?  {
           maskPosition: `${mousePosition.x - maskSize / 2}px ${
             mousePosition.y - maskSize / 2
           }px`,
           maskSize: `${maskSize}px`,
-        }}
+        }:{}}
         transition={{
           duration: 0,
         }}
@@ -69,12 +71,12 @@ export const MaskContainer = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="text-center text-white text-4xl font-bold relative z-20"
+          className="text-center text-white text-4xl font-bold relative z-20 contain_x"
         >
           {children}
         </div>
       </motion.div>
-      <div className="w-full h-full flex items-center justify-center text-white px-20">
+      <div className="w-full h-full flex items-center justify-center text-white contain_x">
         {revealText}
       </div>
     </motion.div>

@@ -1,4 +1,5 @@
 'use client';
+import CVButton from '@/components/Buttons/CVButton';
 import Logo from '@/components/Logo/Logo';
 import Overlay from '@/components/Overlay/Overlay';
 import Title from '@/components/Title/Title';
@@ -30,12 +31,15 @@ const HeroSection = () => {
             sit amet consectetur, adipisicing elit. Nam nobis in error repellat
             voluptatibus ad.
           </p>
-          <button
-            className="bg-primary w-fit text-white font-medium py-2 px-4 rounded transition-all hover:bg-primary active:scale-95"
-            onClick={() => setOpenModal(true)}
-          >
-            Estimate a Project
-          </button>
+          <div className="flex flex-col justify-center items-center gap-4">
+            <button
+              className="bg-primary w-fit text-white font-medium py-2 px-4 rounded transition-all hover:bg-primary active:scale-95"
+              onClick={() => setOpenModal(true)}
+            >
+              Estimate a Project
+            </button>
+            <CVButton>Download My Resume</CVButton>
+          </div>
         </div>
       </ShuffleGrid>
     </section>
