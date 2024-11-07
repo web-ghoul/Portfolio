@@ -51,6 +51,12 @@ const Navbar = ({ className }: { className?: string }) => {
             />
           </div>
         </MenuItem>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          link={"/experiences"}
+          item="Experiences"
+        />
         <MenuItem setActive={setActive} active={active} item="Blogs">
           <div className="  text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
@@ -79,12 +85,6 @@ const Navbar = ({ className }: { className?: string }) => {
             />
           </div>
         </MenuItem>
-        <MenuItem
-          setActive={setActive}
-          active={active}
-          link={"/experiences"}
-          item="Experiences"
-        />
         <MenuItem
           setActive={setActive}
           active={active}

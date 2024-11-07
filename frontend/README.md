@@ -20,8 +20,7 @@ Helper Libraries:
 
 Helper Components:
 1- https://ui.aceternity.com/
-2- https://ui.aceternity.com/components/timeline
-3- https://www.hover.dev/
+2- https://www.hover.dev/
 
 Features:
 1- Blogs
