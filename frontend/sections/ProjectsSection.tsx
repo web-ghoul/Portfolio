@@ -1,14 +1,14 @@
-'use client';
-import Title from '@/components/Title/Title';
-import { ReactLenis } from '@studio-freight/react-lenis';
+"use client";
+import Title from "@/components/Title/Title";
+import { ReactLenis } from "@studio-freight/react-lenis";
 import {
   motion,
   useMotionTemplate,
   useScroll,
   useTransform,
-} from 'framer-motion';
-import { useRef } from 'react';
-import { FiMapPin } from 'react-icons/fi';
+} from "framer-motion";
+import { useRef } from "react";
+import { FiMapPin } from "react-icons/fi";
 
 const ProjectsSection = () => {
   return (
@@ -34,7 +34,7 @@ const Hero = () => {
   return (
     <div
       style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
-      className="relative w-full"
+      className="relative w-full relative z-[1]"
     >
       <CenterImage />
       <ParallaxImages />
@@ -54,7 +54,7 @@ const CenterImage = () => {
   const backgroundSize = useTransform(
     scrollY,
     [0, SECTION_HEIGHT + 500],
-    ['170%', '100%'],
+    ["170%", "100%"]
   );
 
   return (
@@ -63,11 +63,10 @@ const CenterImage = () => {
       style={{
         clipPath,
         backgroundSize,
-        backgroundImage:
-          'url(https://images.unsplash.com/photo-1460186136353-977e9d6085a1?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed',
-        backgroundRepeat: 'no-repeat',
+        backgroundImage: 'url("/images/office1.jpeg")',
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
       }}
     />
   );
@@ -125,7 +124,6 @@ const ParallaxImg = ({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    // @ts-ignore
     offset: [`${start}px end`, `end ${end * -1}px`],
   });
 
@@ -148,15 +146,15 @@ const ParallaxImg = ({
 
 const Schedule = () => {
   return (
-    <div id="launch-schedule" className="text-white">
-      <motion.h1
+    <div id="launch-schedule" className="text-white bg-black relative z-[2]">
+      <motion.div
         initial={{ y: 48, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: 'easeInOut', duration: 0.75 }}
+        transition={{ ease: "easeInOut", duration: 0.75 }}
         className="mb-20 text-4xl font-black uppercase text-zinc-50"
       >
-        <Title text={'Experiences'} />
-      </motion.h1>
+        <Title text={"Projects"} />
+      </motion.div>
       <ScheduleItem title="NG-21" date="Dec 9th" location="Florida" />
       <ScheduleItem title="Starlink" date="Dec 20th" location="Texas" />
       <ScheduleItem title="Starlink" date="Jan 13th" location="Florida" />
@@ -181,7 +179,7 @@ const ScheduleItem = ({
     <motion.div
       initial={{ y: 48, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
-      transition={{ ease: 'easeInOut', duration: 0.75 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
       className="mb-9 flex items-center justify-between border-b border-zinc-800 px-3 pb-9"
     >
       <div>

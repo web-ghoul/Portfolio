@@ -36,8 +36,8 @@ main {
 }
 
 .contain_y {
-  padding-top: 40px !important;
-  padding-bottom: 40px !important;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
 }
 
 .glassy {
@@ -57,12 +57,13 @@ main {
 ::-webkit-scrollbar {
   width: 3px;
   height: 3px;
+  border-radius: 30px;
   background-color: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #000;
-  border-radius: 0px;
+  background: linear-gradient(45deg, #4a87ce, #ff3131);
+  border-radius: 100px;
 }
 /*Scroll Bar*/
 

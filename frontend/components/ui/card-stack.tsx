@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-let interval: any;
+let interval: NodeJS.Timeout;
 
 type Card = {
   id: number;
@@ -40,12 +40,12 @@ export const CardStack = ({
   };
 
   return (
-    <div className="relative h-60 w-60 md:h-60 md:w-96 m-auto flex justify-center items-start">
+    <div className="relative h-60 !w-[300px] md:h-60 md:w-96 m-auto flex justify-center items-start">
       {cards.map((card, index) => {
         return (
           <motion.div
             key={card.id}
-            className="absolute bg-[#111] h-60 w-96 rounded-3xl p-4 shadow-xl border border-[#333] shadow-[#111] flex flex-col justify-between"
+            className="absolute bg-[#111] h-fit !w-[500px] rounded-3xl p-4 shadow-xl border border-[#222] shadow-black flex flex-col justify-between gap-6"
             style={{
               transformOrigin: 'top center',
             }}

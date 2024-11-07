@@ -42,7 +42,7 @@ export const MaskContainer = ({
   return (
     <motion.div
       ref={containerRef}
-      className={cn('h-screen relative', className)}
+      className={cn('!h-full relative', className)}
       animate={{
         backgroundColor: isHovered ? '#000' : 'var(--black)',
       }}
@@ -60,7 +60,7 @@ export const MaskContainer = ({
         }}
       >
         <div
-          style={{ backgroundImage: `url("/images/webGhoul.jpg")` }}
+          style={{ backgroundImage: `url("/images/office.jpeg")` }}
           className={`w-full bg-cover bg-center bg-no-repeat h-full absolute z-[-1]`}
         />
         <div className="absolute inset-0 bg-black h-full w-full z-0 opacity-50" />
@@ -71,12 +71,12 @@ export const MaskContainer = ({
           onMouseLeave={() => {
             setIsHovered(false);
           }}
-          className="text-center text-white text-4xl font-bold relative z-20 contain_x"
+          className="text-center text-white text-4xl font-bold relative z-20"
         >
           {children}
         </div>
       </motion.div>
-      <div className="w-full h-full flex items-center justify-center text-white contain_x">
+      <div className="w-full h-full flex items-center justify-center text-white">
         {revealText}
       </div>
     </motion.div>

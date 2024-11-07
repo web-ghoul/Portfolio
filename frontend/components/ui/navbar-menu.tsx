@@ -50,7 +50,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active"
-                className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-white/[0.2] shadow-xl"
+                className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-zinc-800 shadow-xl"
               >
                 <motion.div layout className="w-max h-full p-4">
                   {children}
@@ -112,7 +112,7 @@ export const ProductItem = ({
 
 export const HoveredLink = ({ children, ...rest }: HoveredLinkProps) => {
   return (
-    <Link {...rest} className="text-neutral-200 hover:text-black ">
+    <Link {...rest} className="text-neutral-200 hover:text-primary ">
       {children}
     </Link>
   );

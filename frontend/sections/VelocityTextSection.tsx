@@ -1,19 +1,19 @@
-'use client';
+"use client";
 import {
   motion,
   useScroll,
   useSpring,
   useTransform,
   useVelocity,
-} from 'framer-motion';
-import { useRef } from 'react';
+} from "framer-motion";
+import { useRef } from "react";
 
-export const VelocityText = ({ text }: { text: string }) => {
+export const VelocityText = () => {
   const targetRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ['start start', 'end start'],
+    offset: ["start start", "end start"],
   });
 
   const scrollVelocity = useVelocity(scrollYProgress);
@@ -21,7 +21,7 @@ export const VelocityText = ({ text }: { text: string }) => {
   const skewXRaw = useTransform(
     scrollVelocity,
     [-0.5, 0.5],
-    ['45deg', '-45deg'],
+    ["45deg", "-45deg"]
   );
   const skewX = useSpring(skewXRaw, { mass: 3, stiffness: 400, damping: 50 });
 
@@ -38,7 +38,7 @@ export const VelocityText = ({ text }: { text: string }) => {
           style={{ skewX, x }}
           className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
         >
-          {text}
+          Hello, its me webGhoul, Iam MERN Stack Developer
         </motion.p>
       </div>
     </section>

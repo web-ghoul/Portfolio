@@ -11,9 +11,9 @@ const CVButton = ({
     <a href={'/mahmoud_salama.pdf'} download="mahmoud_salama_cv">
       <button
         {...rest}
-        className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] hover:text-white"
+        className="group relative px-4 py-2 font-medium text-slate-100 transition-colors duration-[400ms] overflow-hidden text-center group/modal-btn"
       >
-        <span>{children}</span>
+        {children}
 
         {/* TOP */}
         <span className="absolute left-0 top-0 h-[2px] w-0 bg-primary transition-all duration-100 group-hover:w-full" />

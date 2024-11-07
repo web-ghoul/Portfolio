@@ -15,6 +15,8 @@ Helper Libraries:
 1- https://www.slatejs.org/examples/richtext
 2- https://scrollyvideo.js.org/
 3- https://ui.shadcn.com/
+4- https://michalsnik.github.io/aos/
+5- https://fullcalendar.io/
 
 Helper Components:
 1- https://ui.aceternity.com/
@@ -36,6 +38,7 @@ Notes :
 5- https://ui.aceternity.com/components/apple-cards-carousel For Services Section
 6- https://ui.aceternity.com/components/background-lines For Estimate Project Section
 7- https://ui.aceternity.com/components/background-beams-with-collision For Contact Section
-8- https://ui.aceternity.com/components/floating-dock For Socila Media Modal
+8- https://ui.aceternity.com/components/floating-dock For Social Media Modal
 9- https://ui.aceternity.com/components/file-upload For Upload Image of Project or Blog
 10- https://www.hover.dev/components/dropdown-menu (Staggered Dropdown) For Navbar in Mobile Screen
+11- https://ui.aceternity.com/components/tracing-beam For Blog Page

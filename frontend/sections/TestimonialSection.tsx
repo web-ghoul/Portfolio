@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 
 const TestimonialSection = () => {
   return (
-    <section className="min-h-screen grid items-center justify-center w-full">
+    <section className="grid items-center justify-center w-full gap-24 contain_x contain_y">
       <Title text={'What My Clients Said'} />
       <CardStack items={CARDS} />
     </section>

@@ -1,27 +1,26 @@
-'use client';
-import { cn } from '@/lib/utils';
-import { useState } from 'react';
-import SliderToggle from '../SliderToggle/SliderToggle';
-import { HoveredLink, Menu, MenuItem, ProductItem } from '../ui/navbar-menu';
+"use client";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
+import SliderToggle from "../SliderToggle/SliderToggle";
+import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
-  const [selected, setSelected] = useState<'light' | 'dark'>('light');
+  const [selected, setSelected] = useState<"light" | "dark">("light");
 
   return (
     <div
       className={cn(
-        'fixed top-4 min-w-fit w-[75%] m-auto inset-x-0 z-[100000] !rounded-full',
-        className,
+        "fixed top-4 m-auto inset-x-0 z-[100000] !rounded-full contain_x",
+        className
       )}
     >
       <Menu setActive={setActive}>
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
+            <HoveredLink href="services/web-dev">Web Applications</HoveredLink>
+            <HoveredLink href="/seo">Mobile Applications</HoveredLink>
+            <HoveredLink href="/interface-design">UI / UX</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Projects">
@@ -80,19 +79,17 @@ const Navbar = ({ className }: { className?: string }) => {
             />
           </div>
         </MenuItem>
-        <MenuItem setActive={setActive} active={active} item="Pricing">
-          <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/hobby">Hobby</HoveredLink>
-            <HoveredLink href="/individual">Individual</HoveredLink>
-            <HoveredLink href="/team">Team</HoveredLink>
-            <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-          </div>
-        </MenuItem>
+        <MenuItem
+          setActive={setActive}
+          active={active}
+          link={"/experiences"}
+          item="Experiences"
+        />
         <MenuItem
           setActive={setActive}
           active={active}
           item="Contact"
-          link={'/contact'}
+          link={"/contact"}
         />
         <SliderToggle selected={selected} setSelected={setSelected} />
       </Menu>
