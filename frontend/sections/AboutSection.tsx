@@ -17,7 +17,7 @@ const AboutSection = () => {
         </div>
         <MaskContainer
           revealText={
-            <p className="text-white text-center text-4xl font-bold">
+            <p className="text-white text-left text-4xl font-bold">
               The first rule of MRR Club is you do not talk about MRR Club. The
               second rule of MRR Club is you DO NOT talk about MRR Club.
             </p>

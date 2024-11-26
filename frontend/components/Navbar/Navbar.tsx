@@ -1,12 +1,11 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { useState } from "react";
-import SliderToggle from "../SliderToggle/SliderToggle";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "../ui/navbar-menu";
 
 const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
-  const [selected, setSelected] = useState<"light" | "dark">("light");
+  // const [selected, setSelected] = useState<"light" | "dark">("light");
 
   return (
     <div
@@ -88,10 +87,16 @@ const Navbar = ({ className }: { className?: string }) => {
         <MenuItem
           setActive={setActive}
           active={active}
+          item="About"
+          link={"/about"}
+        />
+        <MenuItem
+          setActive={setActive}
+          active={active}
           item="Contact"
           link={"/contact"}
         />
-        <SliderToggle selected={selected} setSelected={setSelected} />
+        {/* <SliderToggle selected={selected} setSelected={setSelected} /> */}
       </Menu>
     </div>
   );

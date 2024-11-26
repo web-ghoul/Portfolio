@@ -1,6 +1,4 @@
 "use client";
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
-import Title from "@/components/Title/Title";
 import { ReactLenis } from "@studio-freight/react-lenis";
 import {
   motion,
@@ -10,9 +8,9 @@ import {
 } from "framer-motion";
 import { useRef } from "react";
 
-const ProjectsSection = () => {
+const ParallaxSection = () => {
   return (
-    <section className="bg-black contain_x contain_y">
+    <section className="bg-black contain_x contain_y relative z-[1]">
       <ReactLenis
         root
         options={{
@@ -22,13 +20,12 @@ const ProjectsSection = () => {
         }}
       >
         <Hero />
-        <Schedule />
       </ReactLenis>
     </section>
   );
 };
 
-const SECTION_HEIGHT = 1500;
+const SECTION_HEIGHT = 1650;
 
 const Hero = () => {
   return (
@@ -76,32 +73,25 @@ const ParallaxImages = () => {
   return (
     <>
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1484600899469-230e8d1d59c0?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/images/uiux.jpg"
         alt="And example of a space launch"
         start={-200}
         end={200}
         className="w-1/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/images/web.jpg"
         alt="An example of a space launch"
         start={200}
         end={-250}
         className="mx-auto w-2/3"
       />
       <ParallaxImg
-        src="https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?q=80&w=2370&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        src="/images/mobile.jpg"
         alt="Orbiting satellite"
         start={-200}
         end={200}
         className="ml-auto w-1/3"
-      />
-      <ParallaxImg
-        src="https://images.unsplash.com/photo-1494022299300-899b96e49893?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="Orbiting satellite"
-        start={0}
-        end={-500}
-        className="ml-24 w-5/12"
       />
     </>
   );
@@ -144,27 +134,4 @@ const ParallaxImg = ({
   );
 };
 
-const Schedule = () => {
-  return (
-    <div
-      id="launch-schedule"
-      className="text-white bg-black relative z-[2] grid justify-stretch items-center gap-8"
-    >
-      <motion.div
-        initial={{ y: 48, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
-        className="text-4xl font-black uppercase text-zinc-50"
-      >
-        <Title text={"Projects"} />
-      </motion.div>
-      <div className="grid justify-stretch items-center gap-8 grid-cols-3">
-        {Array.from({ length: 6 }).map((_, i) => (
-          <ProjectCard key={i} />
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default ProjectsSection;
+export default ParallaxSection;

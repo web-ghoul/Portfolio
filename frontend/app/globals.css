@@ -29,6 +29,10 @@ main {
   width: 100vw !important;
 }
 
+section {
+  padding: 50px 0;
+}
+
 /*Components*/
 .contain_x {
   padding-left: 120px !important;
