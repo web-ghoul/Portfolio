@@ -41,3 +41,11 @@ Notes :
 9- https://ui.aceternity.com/components/file-upload For Upload Image of Project or Blog
 10- https://www.hover.dev/components/dropdown-menu (Staggered Dropdown) For Navbar in Mobile Screen
 11- https://ui.aceternity.com/components/tracing-beam For Blog Page
+
+
+
+
+
+project need to work on it :
+1- Medicrub
+2- Brainstorm

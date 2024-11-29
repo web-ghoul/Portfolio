@@ -1,6 +1,0 @@
-{
-  "watch": ["index.ts"],
-  "ignore": ["C:/DumpStack.log.tmp"],
-  "ext": "ts",
-  "exec": "ts-node index.ts"
-}

@@ -35,8 +35,9 @@ interface TestimonialTypes extends Document {
 interface ProjectTypes extends Document {
   name: string;
   description: string;
-  images?: object[];
-  creator: object;
+  images: string[];
+  url: string;
+  github: string;
 }
 
 interface BlogTypes extends Document {

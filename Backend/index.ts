@@ -1,19 +1,23 @@
 import cors from 'cors';
 import { config } from 'dotenv';
 import express, { Request, Response } from 'express';
-import dbConnection from './db/db';
+import projectRouter from "./routes/projects.routes";
+import dbConnection from "./db/db";
 config();
 
 const app = express();
 const PORT = process.env.PORT || 4000;
 
 const corsOptions = {
-  origin: 'https://your-frontend-domain.com',
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: process.env.CLIENT_URL,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
 app.use(cors(corsOptions));
+
+//Routes
+app.use("/api/projects", projectRouter);
 
 //Connect Dataase
 dbConnection();

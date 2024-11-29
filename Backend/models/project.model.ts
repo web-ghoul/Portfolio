@@ -1,27 +1,30 @@
-import mongoose, { Schema } from 'mongoose';
-import { ProjectTypes } from '../types/models.types';
+import mongoose, { Schema } from "mongoose";
+import { ProjectTypes } from "../types/models.types";
 
 const ProjectSchema: Schema<ProjectTypes> = new Schema<ProjectTypes>(
   {
     name: {
       type: String,
-      required: [true, 'Project name is required'],
+      required: [true, "Project name is required"],
     },
     description: {
       type: String,
-      required: [true, 'Project description is required'],
+      required: [true, "Project description is required"],
     },
     images: {
-      type: [mongoose.Schema.ObjectId],
-      ref: 'File',
+      type: [String],
+      required: [true, "Project images is required"],
     },
-    creator: {
-      type: mongoose.Schema.ObjectId,
-      ref: 'User',
-      required: [true, 'Creator is required'],
+    url: {
+      type: String,
+      required: [true, "Project URL is required"],
+    },
+    github: {
+      type: String,
+      required: [true, "Project github is required"],
     },
   },
-  { timestamps: true },
+  { timestamps: true }
 );
 
-export default mongoose.model<ProjectTypes>('Project', ProjectSchema);
+export default mongoose.model<ProjectTypes>("Project", ProjectSchema);

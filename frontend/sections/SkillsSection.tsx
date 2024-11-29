@@ -18,7 +18,7 @@ const SkillsSection = () => {
         <Title text={"Skills"} />
       </motion.div>
       <div className="grid justify-stretch items-center gap-8 grid-cols-5">
-        {Array.from({ length: 20 }).map((_, i) => (
+        {Array.from({ length: 24 }).map((_, i) => (
           <SkillCard key={i} />
         ))}
       </div>
