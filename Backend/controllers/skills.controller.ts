@@ -1,24 +1,24 @@
 import { NextFunction, Response } from "express";
-import Project from "../models/project.model";
 import AuthorizationRequestTypes from "../types/middlewares.types";
 import CustomError from "../utils/customError.util";
-import { uploadImages } from "../utils/upload.util";
+import { uploadImage } from "../utils/upload.util";
+import Skill from "../models/skill.model";
 
-const createProject = async (
+const createSkill = async (
   req: AuthorizationRequestTypes,
   res: Response,
   next: NextFunction
 ) => {
   try {
-    const { files, body, file } = req;
-    if (files) {
-      const result = await uploadImages(files);
-      req.body.images = result;
+    const { body, file } = req;
+    if (file) {
+      const result = await uploadImage(file);
+      req.body.logo = result;
     }
-    const newProject = await Project.create(body);
-    if (newProject) {
+    const newSkill = await Skill.create(body);
+    if (newSkill) {
       return res.status(201).json({
-        message: "Project is created successfully",
+        message: "Skill is created successfully",
       });
     }
     return res.status(400).json({
@@ -30,23 +30,23 @@ const createProject = async (
   }
 };
 
-const updateProject = async (
+const updateSkill = async (
   req: AuthorizationRequestTypes,
   res: Response,
   next: NextFunction
 ) => {
   try {
-    const { files, body, params } = req;
-    if (files) {
-      const result = await uploadImages(files);
+    const { file, body, params } = req;
+    if (file) {
+      const result = await uploadImage(file);
       if (result.length > 0) {
-        req.body.images = result;
+        req.body.logo = result;
       }
     }
-    const updatedProject = await Project.updateOne({ _id: params.id }, body);
-    if (updatedProject) {
+    const updatedSkill = await Skill.updateOne({ _id: params.id }, body);
+    if (updatedSkill) {
       return res.status(201).json({
-        message: "Project is updated successfully",
+        message: "Skill is updated successfully",
       });
     }
     return res.status(400).json({
@@ -58,7 +58,7 @@ const updateProject = async (
   }
 };
 
-const getProjects = async (
+const getSkills = async (
   req: AuthorizationRequestTypes,
   res: Response,
   next: NextFunction
@@ -78,13 +78,12 @@ const getProjects = async (
       };
     }
     const skipped = (+page - 1) * +(process.env.LIMIT || 10) || 0;
-    const projects = await Project.find(queries)
-      .populate("skills")
+    const skills = await Skill.find(queries)
       .sort({ createdAt: -1 })
       .limit(+(process.env.LIMIT || 10))
       .skip(skipped);
     return res.status(200).json({
-      data: projects,
+      data: skills,
     });
   } catch (error: any) {
     const err = new CustomError(error.message, 500);
@@ -92,39 +91,17 @@ const getProjects = async (
   }
 };
 
-const getProject = async (
+const deleteSkill = async (
   req: AuthorizationRequestTypes,
   res: Response,
   next: NextFunction
 ) => {
   try {
     const { id } = req.params;
-    const project = await Project.findOne({ _id: id }).populate("skills");
-    if (project) {
+    const deletedSkill = await Skill.deleteOne({ _id: id });
+    if (deletedSkill) {
       return res.status(200).json({
-        data: project,
-      });
-    }
-    return res.status(404).json({
-      message: "project isn't exist",
-    });
-  } catch (error: any) {
-    const err = new CustomError(error.message, 500);
-    return next(err);
-  }
-};
-
-const deleteProject = async (
-  req: AuthorizationRequestTypes,
-  res: Response,
-  next: NextFunction
-) => {
-  try {
-    const { id } = req.params;
-    const deletedProject = await Project.deleteOne({ _id: id });
-    if (deletedProject) {
-      return res.status(200).json({
-        message: "Project is deleted successfully",
+        message: "Skill is deleted successfully",
       });
     }
     return res.status(400).json({
@@ -136,4 +113,4 @@ const deleteProject = async (
   }
 };
 
-export { createProject, updateProject, getProject, getProjects, deleteProject };
+export { createSkill, updateSkill, getSkills, deleteSkill };

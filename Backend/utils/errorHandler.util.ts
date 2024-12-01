@@ -8,8 +8,7 @@ const errorHandler = (error: Error, _: Request, res: Response) => {
     statusCode = error.statusCode;
     message = error.message;
   }
-  res.status(statusCode);
-  res.json({ message });
+  res.status(statusCode).json({ message });
 };
 
 export default errorHandler;

@@ -36,8 +36,14 @@ interface ProjectTypes extends Document {
   name: string;
   description: string;
   images: string[];
+  skills: object[];
   url: string;
   github: string;
+}
+
+interface SkillTypes extends Document {
+  name: string;
+  logo: string;
 }
 
 interface BlogTypes extends Document {
@@ -56,4 +62,5 @@ export {
   ProjectTypes,
   TestimonialTypes,
   UserTypes,
+  SkillTypes,
 };

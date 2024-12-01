@@ -7,12 +7,13 @@ import {
   updateProject,
 } from "../controllers/projects.controller";
 import upload from "../middlewares/multer.middleware";
+import { validation } from "../middlewares/projects.middleware";
 
 const router: Router = express.Router();
 
-router.route("/").post(upload.array("images"), createProject);
+router.route("/").post(upload.array("images"), validation, createProject);
 
-router.route("/:id").put(upload.array("images"), updateProject);
+router.route("/:id").put(upload.array("images"), validation, updateProject);
 
 router.route("/").get(getProjects);
 
