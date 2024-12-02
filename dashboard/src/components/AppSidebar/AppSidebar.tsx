@@ -1,19 +1,26 @@
-import { DropdownMenu } from "@radix-ui/react-dropdown-menu";
+import { DropdownMenu } from '@radix-ui/react-dropdown-menu';
 import {
-  Calendar,
+  BookOpenText,
+  Box,
+  BoxesIcon,
   ChevronUp,
-  Home,
-  Inbox,
-  Search,
+  Contact,
+  LayoutDashboard,
+  LogOut,
+  MessageCircle,
   Settings,
+  ShieldCheck,
   User2,
-} from "lucide-react";
-import Logo from "../Logo/Logo";
+  Wrench,
+} from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Link } from 'react-router-dom';
+import Logo from '../Logo/Logo';
 import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "../ui/dropdown-menu";
+} from '../ui/dropdown-menu';
 import {
   Sidebar,
   SidebarContent,
@@ -25,55 +32,83 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-} from "../ui/sidebar";
+} from '../ui/sidebar';
 
 const AppSidebar = () => {
   const items = [
     {
-      title: "Home",
-      url: "#",
-      icon: Home,
+      title: 'Dashboard',
+      url: `${import.meta.env.VITE_DASHBOARD_ROUTE}`,
+      icon: LayoutDashboard,
+      image: '/images/dashboard.gif',
     },
     {
-      title: "Inbox",
-      url: "#",
-      icon: Inbox,
+      title: 'Projects',
+      url: `${import.meta.env.VITE_PROJECCTS_ROUTE}`,
+      icon: BoxesIcon,
     },
     {
-      title: "Calendar",
-      url: "#",
-      icon: Calendar,
+      title: 'Skills',
+      url: `${import.meta.env.VITE_SKILLS_ROUTE}`,
+      icon: Wrench,
     },
     {
-      title: "Search",
-      url: "#",
-      icon: Search,
+      title: 'Packages',
+      url: `${import.meta.env.VITE_PACKAGES_ROUTE}`,
+      icon: Box,
     },
     {
-      title: "Settings",
-      url: "#",
+      title: 'Certificates',
+      url: `${import.meta.env.VITE_CERTIFICATES_ROUTE}`,
+      icon: ShieldCheck,
+    },
+    {
+      title: 'Testimonials',
+      url: `${import.meta.env.VITE_TESTIMONIALS_ROUTE}`,
+      icon: BookOpenText,
+    },
+    {
+      title: 'Chats',
+      url: `${import.meta.env.VITE_CHATS_ROUTE}`,
+      icon: MessageCircle,
+    },
+    {
+      title: 'Contacts',
+      url: `${import.meta.env.VITE_CONTACTS_ROUTE}`,
+      icon: Contact,
+    },
+    {
+      title: 'Settings',
+      url: `${import.meta.env.VITE_SETTINGS_ROUTE}`,
       icon: Settings,
     },
   ];
   return (
     <Sidebar>
       <SidebarHeader>
-        <div className="flex justify-start items-center gap-4">
-          <Logo />
-          <SidebarGroupLabel>webGhoul</SidebarGroupLabel>
-        </div>
+        <Link
+          to={`${import.meta.env.VITE_DASHBOARD_ROUTE}`}
+          className="flex justify-start items-center gap-1"
+        >
+          <Logo size={'60'} />
+          <SidebarGroupLabel>Dashbaord</SidebarGroupLabel>
+        </Link>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
+              {items.map(item => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
-                    <a href={item.url}>
-                      <item.icon />
+                    <Link to={item.url}>
+                      {item.image ? (
+                        <LazyLoadImage src={item.image} className="w-[20px]" />
+                      ) : (
+                        <item.icon />
+                      )}
                       <span>{item.title}</span>
-                    </a>
+                    </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
@@ -87,7 +122,7 @@ const AppSidebar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <SidebarMenuButton>
-                  <User2 /> Username
+                  <User2 /> webGhoul
                   <ChevronUp className="ml-auto" />
                 </SidebarMenuButton>
               </DropdownMenuTrigger>
@@ -96,13 +131,8 @@ const AppSidebar = () => {
                 className="w-[--radix-popper-anchor-width]"
               >
                 <DropdownMenuItem>
-                  <span>Account</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <span>Billing</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <span>Sign out</span>
+                  <LogOut />
+                  <span className="!text-red-600">Sign out</span>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

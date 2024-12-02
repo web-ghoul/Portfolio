@@ -1,5 +1,7 @@
+import UnderDevelopmentSection from '@/Sections/UnderDevelopmentSection';
+
 const Error = () => {
-  return <div>Error</div>;
+  return <UnderDevelopmentSection />;
 };
 
 export default Error;

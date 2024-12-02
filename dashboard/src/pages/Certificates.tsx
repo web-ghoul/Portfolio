@@ -1,6 +1,6 @@
 import UnderDevelopmentSection from '@/Sections/UnderDevelopmentSection';
-const Login = () => {
+const Certificates = () => {
   return <UnderDevelopmentSection />;
 };
 
-export default Login;
+export default Certificates;

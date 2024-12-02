@@ -1,5 +1,7 @@
+import UnderDevelopmentSection from '@/Sections/UnderDevelopmentSection';
+
 const Dashboard = () => {
-  return <div>Dashboard</div>;
+  return <UnderDevelopmentSection />;
 };
 
 export default Dashboard;
