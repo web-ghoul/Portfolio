@@ -1,26 +1,23 @@
 import mongoose, { Schema } from 'mongoose';
-import { OfferTypes } from '../types/models.types';
+import { CertificateTypes } from '../types/models.types';
 
-const OfferSchema: Schema<OfferTypes> = new Schema<OfferTypes>(
-  {
-    type: {
-      type: String,
-      required: [true, 'Project Type is required'],
+const CertificateSchema: Schema<CertificateTypes> =
+  new Schema<CertificateTypes>(
+    {
+      title: {
+        type: String,
+        required: [true, 'Certificate title is required'],
+        unique: true,
+      },
+      image: {
+        type: String,
+        required: [true, 'Certificate image is required'],
+      },
     },
-    badget: {
-      type: String,
-      required: [true, 'Badget is required'],
-    },
-    time: {
-      type: String,
-      required: [true, 'Estimate Time is required'],
-    },
-    client: {
-      type: mongoose.Schema.ObjectId,
-      ref: 'User',
-    },
-  },
-  { timestamps: true },
+    { timestamps: true },
+  );
+
+export default mongoose.model<CertificateTypes>(
+  'Certificate',
+  CertificateSchema,
 );
-
-export default mongoose.model<OfferTypes>('Offer', OfferSchema);
