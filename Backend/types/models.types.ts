@@ -15,11 +15,9 @@ interface FileTypes extends Document {
   uploader: object;
 }
 
-interface OfferTypes extends Document {
-  type: string;
-  badget: string;
-  time: string;
-  client?: string;
+interface CertificateTypes extends Document {
+  title: string;
+  image: string;
 }
 
 interface ChatTypes extends Document {
@@ -56,11 +54,11 @@ interface BlogTypes extends Document {
 
 export {
   BlogTypes,
+  CertificateTypes,
   ChatTypes,
   FileTypes,
-  OfferTypes,
   ProjectTypes,
+  SkillTypes,
   TestimonialTypes,
   UserTypes,
-  SkillTypes,
 };
