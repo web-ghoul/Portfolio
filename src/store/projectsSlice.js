@@ -13,6 +13,7 @@ import newsImg from "../static/images/news_project.png"
 import toDo from "../static/images/todo_app.png"
 import tournamentImg from "../static/images/tournament_project.png"
 import webGhoulCalcImg from "../static/images/webGhoulCalcImg.jpeg"
+import lareinoImg from "../static/images/lareino.png"
 
 const initialState = {
     projects: [
