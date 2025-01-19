@@ -27,6 +27,16 @@ const initialState = {
             "skills": ["React", "Material UI", "Redux Toolkit" , "React Hook Form"],
         },
         {
+            "img": lareinoImg,
+            "title": "Lareino",
+            "role": "Front End Developer",
+            "description": "Application to Manage Stores of Traders.",
+            "links": {
+                "preview": "https://test.lareino.com/"
+            },
+            "skills": ["React", "Material UI", "Redux Toolkit" , "React Hook Form"],
+        },
+        {
             "img": dagaginoImg,
             "title": "Dagagino",
             "role": "Front End Developer",
