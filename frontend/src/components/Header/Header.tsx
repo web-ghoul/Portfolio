@@ -1,39 +1,42 @@
+"use client"
 import Link from "next/link"
-import LangSwitch from "../LangSwitch/LangSwitch"
+import { usePathname } from "next/navigation"
 import Logo from "../Logo/Logo"
 
 const Header = () => {
+    const pathname = usePathname()
+
     return (
         <header className={`contain flex justify-between items-center gap-4 bg-background`}>
             <Logo />
             <nav className={`flex justify-center items-center gap-8`}>
-                <ul className="[&_li]:first-letter:text-primary text-gray-400 [&_li]:transition-all [&_li]:hover:text-white flex justify-center items-center gap-8">
-                    <li>
-                        <Link href={"/"}>
+                <ul className={`[&_li]:first-letter:text-primary text-gray-400 [&_li]:transition-all [&_li]:hover:text-white flex justify-center items-center gap-8`}>
+                    <li className={pathname === `${process.env.NEXT_PUBLIC_HOME_ROUTE}` ? "text-white" : ""}>
+                        <Link href={`${process.env.NEXT_PUBLIC_HOME_ROUTE}`}>
                             <span className={`text-primary`}>#</span>
                             home
                         </Link>
                     </li>
-                    <li>
-                        <Link href={"/works"}>
+                    <li className={pathname === `${process.env.NEXT_PUBLIC_WORKS_ROUTE}` ? "text-white" : ""}>
+                        <Link href={`${process.env.NEXT_PUBLIC_WORKS_ROUTE}`}>
                             <span className={`text-primary`}>#</span>
                             works
                         </Link>
                     </li>
-                    <li>
-                        <Link href={"/about"}>
+                    <li className={pathname === `${process.env.NEXT_PUBLIC_ABOUT_ROUTE}` ? "text-white" : ""}>
+                        <Link href={`${process.env.NEXT_PUBLIC_ABOUT_ROUTE}`}>
                             <span className={`text-primary`}>#</span>
                             about-me
                         </Link>
                     </li>
-                    <li>
-                        <Link href={"/contact"}>
+                    <li className={pathname === `${process.env.NEXT_PUBLIC_CONTACT_ROUTE}` ? "text-white" : ""}>
+                        <Link href={`${process.env.NEXT_PUBLIC_CONTACT_ROUTE}`}>
                             <span className={`text-primary`}>#</span>
                             contacts
                         </Link>
                     </li>
                 </ul>
-                <LangSwitch />
+                {/* <LangSwitch /> */}
             </nav>
         </header>
     )

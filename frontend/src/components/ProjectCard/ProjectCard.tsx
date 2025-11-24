@@ -1,10 +1,11 @@
-import project from "../../assets/project.svg"
+import { ProjectTypes } from "@/src/types/app"
+import projectImage from "../../assets/project.svg"
 import PrimaryButton from "../Buttons/PrimaryButton"
 
-const ProjectCard = () => {
+const ProjectCard = ({ project }: { project: ProjectTypes }) => {
     return (
         <article className={`grid justify-stretch items-center border border-primary_border`}>
-            <div className="h-[300px] w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${project.src})` }}></div>
+            <div className="h-[300px] w-full bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${projectImage.src})` }}></div>
             <div className="flex justify-start items-center flex-wrap gap-2 px-4 py-2 border-y border-primary_border text-gray-400">
                 <h6>HTML</h6>
                 -

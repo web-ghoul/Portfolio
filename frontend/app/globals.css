@@ -38,6 +38,10 @@ body {
   min-height: 100vh;
 }
 
+.title_contain {
+  padding: 20px 200px
+}
+
 header.contain {
   padding: 0px 200px !important;
   height: 100px;
@@ -83,6 +87,11 @@ p {
 }
 
 button {
+  font-size: 16px;
+}
+
+input,
+textarea {
   font-size: 16px;
 }
 

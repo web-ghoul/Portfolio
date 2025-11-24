@@ -1,11 +1,21 @@
 import SkillCard from "@/src/components/SkillCard/SkillCard"
 import Title from "@/src/components/Title/Title"
 
-const SkillsSection = () => {
-    return (
+const SkillsSection = ({ variant }: { variant: "basic" | "fancy" }) => {
+    return variant === "basic" ? (
+        <section className={`contain grid justify-between items-center gap-10`}>
+            <Title title={"skills"} noLine />
+            <div className="grid justify-stretch items-center gap-6 grid-cols-5">
+                <SkillCard title={"Languages"} />
+                <SkillCard title={"Other"} />
+                <SkillCard title={"Tools"} />
+                <SkillCard title={"Databases"} />
+                <SkillCard title={"Frameworks"} />
+            </div>
+        </section>
+    ) : (
         <section className={`contain grid justify-between items-center gap-10`}>
             <Title title={"skills"} />
-
             <div className="grid justify-stretch items-center gap-10 grid-cols-[40%_1fr]">
                 <Shape className={`m-auto h-[350px] w-auto`} />
                 <div className={`grid justify-between items-start gap-8 grid-cols-3`}>
