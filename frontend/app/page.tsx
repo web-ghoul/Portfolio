@@ -1,25 +1,15 @@
-import AboutSection from "@/sections/AboutSection";
-import ContactSection from "@/sections/ContactSection";
-import HeroSection from "@/sections/HeroSection";
-import ParallaxSection from "@/sections/ParallaxSection";
-import ServicesSection from "@/sections/ServicesSection";
-import SkillsSection from "@/sections/SkillsSection";
-import TestimonialSection from "@/sections/TestimonialSection";
-import { VelocityText } from "@/sections/VelocityTextSection";
-import ViewProjectsSection from "@/sections/ViewProjectSection";
+import HeroSection from "@/src/sections/HeroSection/HeroSection";
+import ProjectsSection from "@/src/sections/ProjectsSection/ProjectsSection";
+import QuoteSection from "@/src/sections/QuoteSection/QuoteSection";
+import SkillsSection from "@/src/sections/SkillsSection/SkillsSection";
 
 export default function Home() {
   return (
-    <>
+    <main className="grid justify-stretch items-center">
       <HeroSection />
-      <AboutSection />
-      <VelocityText />
-      <ServicesSection />
-      <ParallaxSection />
-      <ViewProjectsSection />
+      <QuoteSection />
+      <ProjectsSection />
       <SkillsSection />
-      <TestimonialSection />
-      <ContactSection />
-    </>
+    </main>
   );
 }

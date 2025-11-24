@@ -1,51 +1,36 @@
-Inspiration Portfolios:
-1- https://vanholtz.co/
-2- https://www.lauren-waller.com/
-3- https://brittanychiang.com/
-4- https://bepatrickdavid.com/
-5- https://dunks1980.com/
-6- https://p5aholic.me/
-7- https://www.codewonders.dev/
-8- https://tamalsen.dev/
-9- https://www.seanhalpin.xyz/
-10- https://www.rammaheshwari.com/
-11- https://themirrorful.com/
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Helper Libraries:
-1- https://www.slatejs.org/examples/richtext
-2- https://scrollyvideo.js.org/
-3- https://ui.shadcn.com/
-4- https://michalsnik.github.io/aos/
-5- https://fullcalendar.io/
+## Getting Started
 
-Helper Components:
-1- https://ui.aceternity.com/
-2- https://www.hover.dev/
+First, run the development server:
 
-Features:
-1- Blogs
-2- Chat
-3- Rate Portfolio
-4- Testimonials
-5- Estimate Project Flow
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Notes :
-1- Set My Image as Background Image At About Section
-2- https://ui.aceternity.com/components/sidebar For Dashbaord
-3- https://ui.aceternity.com/components/hero-highlight For Titles
-4- https://ui.aceternity.com/components/card-hover-effect For Projects Boxes
-5- https://ui.aceternity.com/components/apple-cards-carousel For Services Section
-6- https://ui.aceternity.com/components/background-lines For Estimate Project Section
-7- https://ui.aceternity.com/components/background-beams-with-collision For Contact Section
-8- https://ui.aceternity.com/components/floating-dock For Social Media Modal
-9- https://ui.aceternity.com/components/file-upload For Upload Image of Project or Blog
-10- https://www.hover.dev/components/dropdown-menu (Staggered Dropdown) For Navbar in Mobile Screen
-11- https://ui.aceternity.com/components/tracing-beam For Blog Page
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Learn More
 
+To learn more about Next.js, take a look at the following resources:
 
-project need to work on it :
-1- Medicrub
-2- Brainstorm
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
