@@ -1,5 +1,6 @@
 import Footer from "@/src/components/Footer/Footer";
 import Header from "@/src/components/Header/Header";
+import Links from "@/src/components/Links/Links";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${firaCode.variable} antialiased`}
       >
         <Header />
+        <Links />
         {children}
         <Footer />
       </body>

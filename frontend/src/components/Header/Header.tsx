@@ -4,7 +4,7 @@ import Logo from "../Logo/Logo"
 
 const Header = () => {
     return (
-        <header className={`contain flex justify-between items-center gap-4`}>
+        <header className={`contain flex justify-between items-center gap-4 bg-background`}>
             <Logo />
             <nav className={`flex justify-center items-center gap-8`}>
                 <ul className="[&_li]:first-letter:text-primary text-gray-400 [&_li]:transition-all [&_li]:hover:text-white flex justify-center items-center gap-8">

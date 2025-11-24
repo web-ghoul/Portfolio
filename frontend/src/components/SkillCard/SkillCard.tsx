@@ -7,11 +7,17 @@ const SkillCard = ({ title }: { title: string }) => {
             </div>
             <div className="flex flex-wrap justify-stretch items-center gap-2 text-gray-400 p-3">
                 <h6>TypeScript</h6>
+                -
                 <h6>Python</h6>
+                -
                 <h6>JavaScript</h6>
+                -
                 <h6>C++</h6>
+                -
                 <h6>Java</h6>
+                -
                 <h6>C#</h6>
+                -
                 <h6>Rust</h6>
             </div>
         </article>
