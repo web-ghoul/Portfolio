@@ -1,4 +1,8 @@
+import FacebookIcon from "@/src/icons/FacebookIcon"
+import LinkedinIcon from "@/src/icons/LinkedinIcon"
+import WhatsAppIcon from "@/src/icons/WhatsAppIcon"
 import Logo from "../Logo/Logo"
+import Media from "../Media/Media"
 
 const Footer = () => {
     return (
@@ -16,7 +20,17 @@ const Footer = () => {
 
                 <div className="grid justify-stretch items-center gap-4">
                     <h5 className="font-bold">Social Media</h5>
-
+                    <div className="flex flex-wrap justify-start items-center gap-3">
+                        <Media link="">
+                            <WhatsAppIcon className="w-5 h-auto" />
+                        </Media>
+                        <Media link="">
+                            <FacebookIcon className="w-5 h-auto" />
+                        </Media>
+                        <Media link="">
+                            <LinkedinIcon className="w-5 h-auto" />
+                        </Media>
+                    </div>
                 </div>
             </div>
             <p className="text-gray-400 text-center">© Copyright {new Date().getFullYear()}. Made by webGhoul.</p>

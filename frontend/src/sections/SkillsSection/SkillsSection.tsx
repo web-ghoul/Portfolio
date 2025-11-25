@@ -1,5 +1,6 @@
 import SkillCard from "@/src/components/SkillCard/SkillCard"
 import Title from "@/src/components/Title/Title"
+import Shapes from "@/src/icons/Shapes"
 
 const SkillsSection = ({ variant }: { variant: "basic" | "fancy" }) => {
     return variant === "basic" ? (
@@ -17,7 +18,7 @@ const SkillsSection = ({ variant }: { variant: "basic" | "fancy" }) => {
         <section className={`contain grid justify-between items-center gap-10`}>
             <Title title={"skills"} />
             <div className="grid justify-stretch items-center gap-10 grid-cols-[40%_1fr]">
-                <Shape className={`m-auto h-[350px] w-auto`} />
+                <Shapes className={`m-auto h-[350px] w-auto`} />
                 <div className={`grid justify-between items-start gap-8 grid-cols-3`}>
                     <SkillCard title={"Languages"} />
                     <div className="grid justify-between items-center gap-8">
