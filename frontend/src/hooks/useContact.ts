@@ -1,13 +1,35 @@
-import { FormEvent } from "react";
+import emailjs from "@emailjs/browser";
+import { FormEvent, useRef, useState } from "react";
 
-const useContact = (values: { name: string; email: string; title: string; subject: string }) => {
+const useContact = () => {
+    const form = useRef<HTMLFormElement | null>(null);
+    const [loading, setLoading] = useState(false)
 
-    const handleSendMessage = (e: FormEvent<HTMLFormElement>): void => {
+    const handleSendMessage = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log(values)
+        if (!form.current) return;
+        setLoading(true)
+        await emailjs
+            .sendForm(
+                "service_nqve4wi",
+                "template_irbr19d",
+                form.current,
+                "1nJjrbK2pv9PhyreL"
+            )
+            .then(
+                (result) => {
+                    setLoading(false)
+                    console.log(result.text);
+                },
+                (error) => {
+                    setLoading(false)
+                    console.log(error.text);
+                }
+            );
+        setLoading(false)
     }
 
-    return { handleSendMessage }
+    return { form, loading, handleSendMessage }
 }
 
 export default useContact

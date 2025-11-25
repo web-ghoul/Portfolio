@@ -9,8 +9,8 @@ const Header = () => {
     return (
         <header className={`contain flex justify-between items-center gap-4 bg-background`}>
             <Logo />
-            <nav className={`flex justify-center items-center gap-8`}>
-                <ul className={`[&_li]:first-letter:text-primary text-gray-400 [&_li]:transition-all [&_li]:hover:text-white flex justify-center items-center gap-8`}>
+            <nav className={`flex justify-center items-center gap-8 max-laptop:gap-7 max-tablet:gap-6 max-mobile:gap-5 max-small:gap-4`}>
+                <ul className={`[&_li]:first-letter:text-primary text-gray-400 [&_li]:transition-all [&_li]:hover:text-white flex justify-center items-center gap-8 max-laptop:gap-7 max-tablet:gap-6 max-mobile:gap-5 max-small:gap-4`}>
                     <li className={pathname === `${process.env.NEXT_PUBLIC_HOME_ROUTE}` ? "text-white" : ""}>
                         <Link href={`${process.env.NEXT_PUBLIC_HOME_ROUTE}`}>
                             <span className={`text-primary`}>#</span>

@@ -1,6 +1,7 @@
 import FacebookIcon from "@/src/icons/FacebookIcon"
 import LinkedinIcon from "@/src/icons/LinkedinIcon"
 import WhatsAppIcon from "@/src/icons/WhatsAppIcon"
+import data from "../../data/links.json"
 import Logo from "../Logo/Logo"
 import Media from "../Media/Media"
 
@@ -15,19 +16,19 @@ const Footer = () => {
                             <h6>mahmoudaboraya2021@gmail.com</h6>
                         </a>
                     </div>
-                    <h5>MERN-Stack Developer</h5>
+                    <p>MERN-Stack Developer</p>
                 </div>
 
                 <div className="grid justify-stretch items-center gap-4">
-                    <h5 className="font-bold">Social Media</h5>
+                    <h6 className="font-bold">Social Media</h6>
                     <div className="flex flex-wrap justify-start items-center gap-3">
-                        <Media link="">
+                        <Media link={data.whatsapp}>
                             <WhatsAppIcon className="w-5 h-auto" />
                         </Media>
-                        <Media link="">
+                        <Media link={data.facebook}>
                             <FacebookIcon className="w-5 h-auto" />
                         </Media>
-                        <Media link="">
+                        <Media link={data.linkedin}>
                             <LinkedinIcon className="w-5 h-auto" />
                         </Media>
                     </div>

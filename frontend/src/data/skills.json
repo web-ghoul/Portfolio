@@ -1,0 +1,33 @@
+{
+  "languages": [
+    "HTML5",
+    "CSS3",
+    "Sass",
+    "Javascript",
+    "Typescript",
+    "Node",
+    "C++",
+    "Java",
+    "Python"
+  ],
+  "frameworks_libraries": [
+    "Next.js",
+    "Nest.js",
+    "React",
+    "Express.js",
+    "Flask"
+  ],
+  "databases": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
+  "tools": [
+    "VSCode",
+    "Firebase",
+    "Figma",
+    "Git",
+    "Jira",
+    "Trello",
+    "Postman",
+    "Notion",
+    "ChatGPT",
+    "Claude"
+  ]
+}

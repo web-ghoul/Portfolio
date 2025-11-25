@@ -6,7 +6,7 @@ import about from "../../assets/images/about.png"
 
 const AboutSection = ({ noTitle }: { noTitle?: boolean }) => {
     return (
-        <section className="contain grid justify-stretch items-center grid-cols-2 gap-10 relative">
+        <section className="contain grid justify-stretch items-center grid-cols-2 gap-10 relative max-laptop:gap-8 max-tablet:gap-7 max-mobile:gap-6 max-small:gap-5 max-laptop:grid-cols-1">
             <SquareIcon className="w-30 h-auto absolute top-[50%] translate-y-[-50%] -left-10 text-gray-400" />
             <div className="grid justify-stretch items-center gap-8 text-gray-400">
                 {!noTitle && <Title title={"about-me"} />}
@@ -16,9 +16,9 @@ const AboutSection = ({ noTitle }: { noTitle?: boolean }) => {
             </div>
             <div className="grid justify-end items-center w-full">
                 <div className="w-3/4 h-auto ml-auto relative">
-                    <DotsIcon className={`absolute left-0 bottom-[10%] w-[120px] h-auto text-gray-400`} />
+                    <DotsIcon className={`absolute left-0 bottom-[10%] w-[120px] h-auto text-gray-400 max-desktop:w-[100px] max-laptop:w-20 max-mobile:w-[60px] max-small:w-10`} />
                     <Image src={about} className="w-full h-auto border-b border-primary" alt={"about"} />
-                    <DotsIcon className={`absolute right-0 top-[10%] w-[120px] h-auto text-gray-400`} />
+                    <DotsIcon className={`absolute right-0 top-[10%] w-[120px] h-auto text-gray-400 max-desktop:w-[100px] max-laptop:w-20 max-mobile:w-[60px] max-small:w-10`} />
                 </div>
             </div>
         </section>

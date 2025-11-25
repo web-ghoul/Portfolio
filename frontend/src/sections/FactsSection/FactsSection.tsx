@@ -5,7 +5,7 @@ import SquareIcon from "@/src/icons/SquareIcon"
 
 const FactsSection = () => {
     return (
-        <section className="contain grid justify-stretch items-center gap-10 relative">
+        <section className="contain grid justify-stretch items-center gap-10 relative max-laptop:w-8 max-tablet:w-7 max-mobile:w-6 max-small:w-5">
             <SquareIcon className="w-30 h-auto absolute top-[50%] translate-y-[-50%] -left-10 text-gray-400" />
             <Title title={"my-fun-facts"} noLine />
             <div className="grid justify-stretch items-center gap-8 grid-cols-[75%_1fr]">

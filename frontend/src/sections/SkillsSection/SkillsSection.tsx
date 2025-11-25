@@ -1,33 +1,30 @@
 import SkillCard from "@/src/components/SkillCard/SkillCard"
 import Title from "@/src/components/Title/Title"
 import Shapes from "@/src/icons/Shapes"
+import data from "../../data/skills.json"
 
 const SkillsSection = ({ variant }: { variant: "basic" | "fancy" }) => {
     return variant === "basic" ? (
-        <section className={`contain grid justify-between items-center gap-10`}>
+        <section className={`contain grid justify-between items-center gap-10 max-laptop:gap-8 max-tablet:gap-7 max-mobile:gap-6 max-small:gap-5`}>
             <Title title={"skills"} noLine />
-            <div className="grid justify-stretch items-center gap-6 grid-cols-5">
-                <SkillCard title={"Languages"} />
-                <SkillCard title={"Other"} />
-                <SkillCard title={"Tools"} />
-                <SkillCard title={"Databases"} />
-                <SkillCard title={"Frameworks"} />
+            <div className="grid justify-stretch items-start gap-6 grid-cols-4">
+                <SkillCard title={"Languages"} skills={data.languages} />
+                <SkillCard title={"Frameworks & Libraries"} skills={data.frameworks_libraries} />
+                <SkillCard title={"Databases"} skills={data.databases} />
+                <SkillCard title={"Tools"} skills={data.tools} />
             </div>
         </section>
     ) : (
-        <section className={`contain grid justify-between items-center gap-10`}>
+        <section className={`contain grid justify-between items-center gap-10 max-laptop:gap-8 max-tablet:gap-7 max-mobile:gap-6 max-small:gap-5`}>
             <Title title={"skills"} />
-            <div className="grid justify-stretch items-center gap-10 grid-cols-[40%_1fr]">
-                <Shapes className={`m-auto h-[350px] w-auto`} />
-                <div className={`grid justify-between items-start gap-8 grid-cols-3`}>
-                    <SkillCard title={"Languages"} />
-                    <div className="grid justify-between items-center gap-8">
-                        <SkillCard title={"Other"} />
-                        <SkillCard title={"Tools"} />
-                    </div>
-                    <div className="grid justify-between items-center gap-8">
-                        <SkillCard title={"Databases"} />
-                        <SkillCard title={"Frameworks"} />
+            <div className="grid justify-stretch items-start gap-8 grid-cols-[40%_1fr] max-desktop:grid-cols-[30%_1fr] max-laptop:grid-cols-1 max-desktop:gap-6 max-laptop:gap-5 max-mobile:gap-4 max-small:gap-2">
+                <Shapes className={`w-3/4 h-auto m-auto max-desktop:w-full max-laptop:order-1 max-laptop:w-1/2 max-small:w-3/4`} />
+                <div className={`grid justify-between items-start gap-8 grid-cols-3 max-desktop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-small:gap-3 max-tablet:grid-cols-2`}>
+                    <SkillCard title={"Languages"} skills={data.languages} />
+                    <SkillCard title={"Frameworks & Libraries"} skills={data.frameworks_libraries} />
+                    <div className="grid justify-between items-start gap-8 max-desktop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-small:gap-3 max-laptop:flex max-laptop:justify-stretch">
+                        <SkillCard title={"Databases"} skills={data.databases} />
+                        <SkillCard title={"Tools"} skills={data.tools} />
                     </div>
                 </div>
             </div>

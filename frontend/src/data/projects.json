@@ -1,0 +1,212 @@
+[
+  {
+    "thumbnail": "/images/projects/sabaa.png",
+    "title": "SABAA",
+    "role": "Front End Developer",
+    "description": "Application to Manage Employee of Companies in Dubai , login email is 'admin@gmail.com' and password is '123123123'",
+    "skills": [
+      "React",
+      "Typescript",
+      "Material UI",
+      "Tailwind",
+      "Redux Toolkit",
+      "React Hook Form",
+      "Yup"
+    ],
+    "live": "https://sabaatyping.com",
+    "github": "",
+    "scale": "Large",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/lareino.png",
+    "title": "Lareino",
+    "role": "Front End Developer",
+    "description": "Application to Manage Stores of Traders.",
+    "skills": [
+      "React",
+      "Typescript",
+      "Material UI",
+      "Tailwind",
+      "Redux Toolkit",
+      "Formik",
+      "Yup"
+    ],
+    "live": "https://lareino.com",
+    "github": "",
+    "scale": "Large",
+    "visible": true
+  },
+  {
+    "thumbnail": "",
+    "title": "Dagagino",
+    "role": "Front End Developer",
+    "description": "Application to Sell Chicken feed for Customers.",
+    "skills": [
+      "Next",
+      "React",
+      "Typescript",
+      "Material UI",
+      "Redux Toolkit",
+      "Formik",
+      "Yup"
+    ],
+    "live": "",
+    "github": "",
+    "scale": "Medium",
+    "visible": false
+  },
+  {
+    "thumbnail": "/images/projects/alcazar.png",
+    "title": "AlCazar",
+    "role": "MERN Stack Developer",
+    "description": "Application to Sell Furnitures for Customers.",
+    "skills": [
+      "Next",
+      "Typescript",
+      "Material UI",
+      "Tailwind",
+      "Redux Toolkit",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+    "live": "https://al-cazar.vercel.app",
+    "github": "https://github.com/web-ghoul/AlCazar",
+    "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/chess_tournament.png",
+    "title": "Chess Tournament",
+    "role": "Frontend Developer",
+    "description": "Application to help Players to management the Competition",
+    "skills": [
+      "React",
+      "Javascript",
+      "Redux Toolkit",
+      "Material UI",
+      "Formik",
+      "Yup"
+    ],
+    "live": "https://chess-tournament.onrender.com",
+    "github": "https://github.com/web-ghoul/Tournament-App",
+    "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/cashier.png",
+    "title": "Cashier System",
+    "role": "Frontend Developer",
+    "description": "Online Restaurant Cashier , I was trying React Redux Toolkit",
+    "skills": ["React", "Javascript", "Redux Toolkit"],
+    "live": "https://webghoul-cashier.onrender.com",
+    "github": "https://github.com/web-ghoul/webGhoul_Cashier",
+    "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/blogging.png",
+    "title": "webGhoul Blogging",
+    "role": "Frontend Developer",
+    "description": "Small Blogging Application , I was Trying Firebase Authentication",
+    "skills": ["React", "Javascript", "Redux Toolkit", "Firebase"],
+    "live": "https://webghoul-blogging-app.web.app",
+    "github": "https://github.com/web-ghoul/webGhoul-Blogging",
+    "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/tuba.png",
+    "role": "Frontend Developer",
+    "title": "Tuba",
+    "description": "Landing Page For Tuba Company",
+    "skills": ["Next", "Typescript", "Tailwind", "Farmer Motion"],
+    "live": "https://tubahealth.com",
+    "github": "",
+    "scale": "Landing",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/qader.png",
+    "role": "MERN Stack Developer",
+    "title": "Qader",
+    "description": "Landing Page For Qader Company",
+    "skills": [
+      "Next",
+      "Typescript",
+      "Tailwind",
+      "Farmer Motion",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+    "live": "https://qadereg.com",
+    "github": "",
+    "scale": "Landing",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/power_treatment.png",
+    "role": "Forntend Developer",
+    "title": "Power Treatment",
+    "description": "Landing Page For Power Treatment Company",
+    "skills": [
+      "Next",
+      "Typescript",
+      "Tailwind",
+      "Contentful",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+    "live": "https://powertreatment-egypt.com",
+    "github": "",
+    "scale": "Landing",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/calculator.png",
+    "title": "webGhoul Calc.",
+    "role": "Frontend Developer",
+    "description": "Small Calculator and Currency Rate Application",
+    "skills": ["React", "HTML5", "CSS3", "Javascript", "Firebase"],
+    "live": "https://webghoul-calc.web.app",
+    "github": "https://github.com/web-ghoul/webGhoul-Calculator",
+    "scale": "Small",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/task_management.png",
+    "title": "To-Do List App",
+    "role": "Frontend Developer",
+    "description": "Small Todo Application That Management Daily Tasks",
+    "skills": ["HTML5", "CSS3", "Javascript"],
+    "live": "https://web-ghoul.github.io/Todo-app",
+    "github": "https://github.com/web-ghoul/Todo-app",
+    "scale": "Small",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/foxeresto.png",
+    "role": "Frontend Developer",
+    "title": "Foxeresto",
+    "description": "Lanfing Page For Medical",
+    "skills": ["HTML5", "CSS3", "Javascript", "JQuery", "Font Awesome"],
+    "live": "https://web-ghoul.github.io/Jquery-Page-2",
+    "github": "https://github.com/web-ghoul/Jquery-Page-2",
+    "scale": "Small",
+    "visible": true
+  },
+  {
+    "thumbnail": "",
+    "role": "Frontend Developer",
+    "title": "Yogax",
+    "description": "Langing Page For Restaurant",
+    "skills": ["HTML5", "CSS3", "Javascript", "JQuery", "Font Awesome"],
+    "live": "",
+    "github": "https://github.com/web-ghoul/jquery-complete-website",
+    "scale": "Small",
+    "visible": true
+  }
+]
