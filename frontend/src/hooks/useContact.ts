@@ -19,6 +19,7 @@ const useContact = () => {
             .then(
                 (result) => {
                     setLoading(false)
+                    form.current?.reset()
                     console.log(result.text);
                 },
                 (error) => {
