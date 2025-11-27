@@ -8,11 +8,11 @@ const QuoteSection = () => {
     return (
         <section className="contain grid justify-center items-center">
             <div className="border border-primary_border text-white p-6 relative max-desktop:p-5 max-laptop:p-4 max-tablet:p-3 max-mobile:p-2 max-small:p-1.5">
-                <h3>{quote.quote}</h3>
-                <QuoteIcon className={`absolute left-4 top-[-17.5%] w-9 h-auto text-gray-400 max-laptop:w-8 max-tablet:w-7 max-mobile:w-6 max-small:w-5`} />
+                <h4>{quote.quote}</h4>
+                <QuoteIcon className={`absolute left-4 top-[-17.5%] w-9 h-auto text-gray-400 max-laptop:w-8 max-tablet:w-7 max-mobile:w-6 max-small:w-5 max-small:top-[-15%]`} />
             </div>
             <div className="border-x border-b border-primary_border text-white p-3 relative w-fit ml-auto max-laptop:p-2.5 max-tablet:p-2 max-mobile:p-1.5 max-small:p-1">
-                <h3>- {quote.writer}</h3>
+                <h4>- {quote.writer}</h4>
                 <QuoteIcon className={`absolute right-4 top-[-17.5%] w-9 h-auto text-gray-400 max-laptop:w-8 max-tablet:w-7 max-mobile:w-6 max-small:w-5`} />
             </div>
         </section>

@@ -1,5 +1,6 @@
 import Footer from "@/src/components/Footer/Footer";
 import Header from "@/src/components/Header/Header";
+import MenuBar from "@/src/components/Header/MenuBar";
 import Links from "@/src/components/Links/Links";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Links />
         {children}
         <Footer />
+        <MenuBar />
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import Media from "../Media/Media"
 
 const Links = () => {
     return (
-        <div className={`fixed left-10 top-0 px-1 grid justify-center items-center bg-background z-1000 max-laptop:left-8 max-mobile:left-6 max-small:left-4`}>
+        <div className={`fixed left-10 top-0 px-1 grid justify-center items-center bg-background z-1000 max-laptop:left-8 max-tablet:left-7 max-mobile:left-5 max-small:left-3`}>
             <div className="h-[20vh] border border-primary_border m-auto w-0" />
             <div className="grid justify-center items-center gap-2">
                 <Media link={data.whatsapp}>

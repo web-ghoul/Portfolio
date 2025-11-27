@@ -15,7 +15,9 @@
     "Nest.js",
     "React",
     "Express.js",
-    "Flask"
+    "Flask",
+    "Laravel",
+    "QT"
   ],
   "databases": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
   "tools": [

@@ -7,9 +7,9 @@ import Media from "../Media/Media"
 
 const Footer = () => {
     return (
-        <footer className={`border-t border-primary_border contain grid justify-stretch items-center gap-20`}>
-            <div className="flex justify-between items-start gap-6">
-                <div className="grid justify-stretch items-center gap-4">
+        <footer className={`border-t border-primary_border contain grid justify-stretch items-center gap-20 max-desktop:gap-18 max-laptop:gap-16 max-tablet:gap-14 max-mobile:gap-12 max-small:gap-10`}>
+            <div className="flex justify-between items-start gap-6 flex-wrap max-laptop:gap-5 max-mobile:gap-4">
+                <div className="grid justify-stretch items-center gap-4 max-laptop:gap-3 max-mobile:gap-2">
                     <div className="flex justify-start items-center gap-4">
                         <Logo />
                         <a className="text-gray-400 transition-all hover:text-primary" href={""} target="_blank">
@@ -19,17 +19,17 @@ const Footer = () => {
                     <p>MERN-Stack Developer</p>
                 </div>
 
-                <div className="grid justify-stretch items-center gap-4">
+                <div className="grid justify-stretch items-center gap-4 max-mobile:m-auto">
                     <h6 className="font-bold">Social Media</h6>
-                    <div className="flex flex-wrap justify-start items-center gap-3">
+                    <div className="flex flex-wrap justify-start items-center gap-3 max-mobile:justify-center">
                         <Media link={data.whatsapp}>
-                            <WhatsAppIcon className="w-5 h-auto" />
+                            <WhatsAppIcon className="w-5 h-auto max-laptop:w-4 max-mobile:w-3.5 max-small:w-3" />
                         </Media>
                         <Media link={data.facebook}>
-                            <FacebookIcon className="w-5 h-auto" />
+                            <FacebookIcon className="w-5 h-auto max-laptop:w-4 max-mobile:w-3.5 max-small:w-3" />
                         </Media>
                         <Media link={data.linkedin}>
-                            <LinkedinIcon className="w-5 h-auto" />
+                            <LinkedinIcon className="w-5 h-auto max-laptop:w-4 max-mobile:w-3.5 max-small:w-3" />
                         </Media>
                     </div>
                 </div>
