@@ -8,6 +8,9 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "clsx": "^2.1.1",
