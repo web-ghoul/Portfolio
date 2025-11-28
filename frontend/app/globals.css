@@ -343,22 +343,22 @@ nav ul li {
 
 @media (max-width:520px) {
   .title_contain {
-    padding: 8px 40px
+    padding: 5px 20px
   }
 
   header.contain,
   nav.contain {
-    padding: 0px 40px !important;
+    padding: 0px 20px !important;
     height: 55px;
   }
 
   section.hero {
-    min-height: calc(100vh - 40px);
+    min-height: calc(100vh - 20px);
   }
 
   section.contain,
   footer.contain {
-    padding: 20px 40px !important;
+    padding: 20px 20px !important;
   }
 
   h1 {

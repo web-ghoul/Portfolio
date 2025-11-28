@@ -1,4 +1,6 @@
+'use client'
 import { ProjectTypes } from "@/src/types/app"
+import { motion } from "motion/react"
 import { Fragment } from "react/jsx-runtime"
 import PrimaryButton from "../Buttons/PrimaryButton"
 import SecondaryButton from "../Buttons/SecondaryButton"
@@ -7,7 +9,7 @@ const ProjectCard = ({ project }: { project: ProjectTypes }) => {
     const { thumbnail, title, description, skills, live, github } = project
 
     return (
-        <article className={`grid justify-stretch items-center border border-primary_border`}>
+        <motion.article viewport={{ once: false }} initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} className={`grid justify-stretch items-center border border-primary_border`}>
             {thumbnail && <div className="h-[300px] w-full bg-cover bg-center bg-no-repeat max-desktop:h-[250px] max-laptop:h-[225px] max-tablet:h-[200px] max-mobile:h-[175px] max-small:h-[150px] border-b border-primary_border" style={{ backgroundImage: `url(${thumbnail})` }}></div>}
             <div className="flex justify-start items-center flex-wrap gap-2 px-4 py-2 border-b border-primary_border text-gray-400 max-laptop:px-3 max-tablet:py-1.5 max-mobile:px-2 max-small:py-1 max-laptop:gap-1.5 max-mobile:gap-1">
                 {
@@ -40,7 +42,7 @@ const ProjectCard = ({ project }: { project: ProjectTypes }) => {
                     </a>}
                 </div>
             </div>
-        </article>
+        </motion.article>
     )
 }
 

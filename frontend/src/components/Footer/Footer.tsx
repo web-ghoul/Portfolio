@@ -10,7 +10,7 @@ const Footer = () => {
         <footer className={`border-t border-primary_border contain grid justify-stretch items-center gap-20 max-desktop:gap-18 max-laptop:gap-16 max-tablet:gap-14 max-mobile:gap-12 max-small:gap-10`}>
             <div className="flex justify-between items-start gap-6 flex-wrap max-laptop:gap-5 max-mobile:gap-4">
                 <div className="grid justify-stretch items-center gap-4 max-laptop:gap-3 max-mobile:gap-2">
-                    <div className="flex justify-start items-center gap-4">
+                    <div className="flex flex-wrap justify-start items-center gap-4 max-laptop:gap-3.5 max-tablet:gap-3 max-mobile:gap-2.5 max-small:gap-2">
                         <Logo />
                         <a className="text-gray-400 transition-all hover:text-primary" href={""} target="_blank">
                             <h6>mahmoudaboraya2021@gmail.com</h6>

@@ -1,15 +1,33 @@
+'use client'
 import PrimaryButton from "@/src/components/Buttons/PrimaryButton"
 import WebGhoulCard from "@/src/components/webGhoulCard/WebGhoulCard"
 import DotsIcon from "@/src/icons/DotsIcon"
+import { TypeAnimation } from "react-type-animation"
 
 const HeroSection = () => {
     return (
         <section className="contain hero grid justify-stretch items-center gap-10 grid-cols-2 max-laptop:grid-cols-[1fr_auto] relative max-laptop:gap-8 max-tablet:gap-7 max-mobile:gap-0 max-mobile:grid-cols-1 max-mobile:grid-rows-[auto_1fr]">
             <DotsIcon className="absolute top-[50%] translate-y-[-50%] left-0 w-[100px] h-auto z-10 text-gray-400 max-desktop:w-[85px] max-laptop:w-[70px] max-tablet:w-[60px] max-mobile:w-[50px]" />
-            <div className="grid justify-stretch items-center gap-8 max-laptop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-mobile:text-center max-mobile:order-1 max-mobile:items-start">
-                <h1 className="font-bold [&_span]:text-primary">
-                    Mahmoud Salama is a <span>web developer</span> <br className="max-mobile:hidden" /> and <span>software engineer</span>
+            <div className="grid justify-stretch items-center gap-8 max-laptop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-mobile:text-center max-mobile:order-1 max-mobile:items-start max-small:gap-3">
+                <h1 className="font-bold [&_span]:text-primary!">
+                    Mahmoud Salama is a <br className="max-mobile:hidden" /> <TypeAnimation
+                        sequence={[
+                            'Frontend Developer',
+                            2000,
+                            'Backend Developer',
+                            2000,
+                            'Web Developer',
+                            2000,
+                            'Software Engineer',
+                            2000
+                        ]}
+                        wrapper="span"
+                        speed={40}
+                        style={{ display: 'inline-block' }}
+                        repeat={Infinity}
+                    />
                 </h1>
+
                 <p className="text-gray-400">He crafts responsive websites where technologies meet creativity</p>
                 <PrimaryButton link={"/contact"} className="w-fit max-mobile:m-auto">
                     Contact me!!

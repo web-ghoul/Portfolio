@@ -28,7 +28,7 @@ const SkillsSection = ({ variant }: { variant: "basic" | "fancy" }) => {
                     </div>
                 </div>
 
-                <div className={`hidden justify-between items-start gap-8 grid-cols-3 max-desktop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-small:gap-3 max-tablet:grid-cols-2 max-mobile:grid`}>
+                <div className={`hidden justify-between items-start gap-8 grid-cols-3 max-desktop:gap-6 max-tablet:gap-5 max-mobile:gap-4 max-small:gap-3 max-tablet:grid-cols-2 max-mobile:grid max-small:grid-cols-1`}>
                     <SkillCard title={"Languages"} skills={data.languages} />
                     <SkillCard title={"Frameworks & Libraries"} skills={data.frameworks_libraries} />
                     <SkillCard title={"Databases"} skills={data.databases} />

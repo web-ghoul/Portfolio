@@ -7,7 +7,7 @@ const WebGhoulCard = () => {
         <CometCard className={`w-fit ml-auto max-mobile:m-auto`}>
             <button
                 type="button"
-                className="flex w-auto h-full cursor-pointer flex-col items-stretch rounded-xl bg-gray-900 p-2 border border-primary_border"
+                className="flex w-auto h-full cursor-pointer flex-col items-stretch rounded-xl bg-gray-900 p-2 border border-gray-700"
                 aria-label="View invite F7RA"
                 style={{
                     transformStyle: "preserve-3d",
@@ -24,7 +24,7 @@ const WebGhoulCard = () => {
                 </div>
                 <div className="flex shrink-0 items-center justify-between p-3 font-mono text-white max-laptop:p-2.5 max-mobile:p-2 max-small:p-1.5">
                     <h6>webGhoul</h6>
-                    <p className="text-gray-300 opacity-50">#007</p>
+                    <p className="text-gray-300 opacity-50">#001</p>
                 </div>
             </button>
         </CometCard>
