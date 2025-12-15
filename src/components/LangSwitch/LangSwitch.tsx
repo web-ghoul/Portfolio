@@ -4,7 +4,7 @@ import Link from "next/link"
 const LangSwitch = () => {
     return (
         <div className="relative group">
-            <button type={"button"} className={`text-gray-400 flex justify-center items-center gap-3 transition-all duration-500 group-hover:text-white hover:cursor-pointer group`}>
+            <button type={"button"} className={`text-gray-500 dark:text-gray-400 flex justify-center items-center gap-3 transition-all duration-500 group-hover:text-foreground hover:cursor-pointer group`}>
                 <p className="font-medium!">AR</p>
                 <ChevronDownIcon className={`transition-all duration-500  group-hover:rotate-180`} />
             </button>

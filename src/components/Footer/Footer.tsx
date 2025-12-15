@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="grid justify-stretch items-center gap-4 max-laptop:gap-3 max-mobile:gap-2">
                     <div className="flex flex-wrap justify-start items-center gap-4 max-laptop:gap-3.5 max-tablet:gap-3 max-mobile:gap-2.5 max-small:gap-2">
                         <Logo />
-                        <a className="text-gray-400 transition-all hover:text-primary" href={""} target="_blank">
+                        <a className="text-gray-500 dark:text-gray-400 transition-all hover:text-primary" href={data.mail} target="_blank">
                             <h6>mahmoudaboraya2021@gmail.com</h6>
                         </a>
                     </div>
@@ -34,7 +34,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="text-gray-400 text-center">© Copyright {new Date().getFullYear()}. Made by webGhoul.</p>
+            <p className="text-gray-500 dark:text-gray-400 text-center">© Copyright {new Date().getFullYear()}. Made by webGhoul.</p>
         </footer>
     )
 }

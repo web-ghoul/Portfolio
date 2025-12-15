@@ -1,0 +1,42 @@
+[
+    {
+        "prefix": "I like",
+        "highlight": "winter",
+        "suffix": "more than summer"
+    },
+    {
+        "prefix": "I often play",
+        "highlight": "football",
+        "suffix": "with my friends"
+    },
+    {
+        "prefix": "I like",
+        "highlight": "pizza",
+        "mid": "and",
+        "highlight2": "pasta"
+    },
+    {
+        "prefix": "I like play",
+        "highlight": "ping pong"
+    },
+    {
+        "prefix": "My favorite movie is",
+        "highlight": "Pursuit of Happiness"
+    },
+    {
+        "prefix": "I stay",
+        "highlight": "curious"
+    },
+    {
+        "prefix": "I believe in",
+        "highlight": "helping",
+        "suffix": "people around me"
+    },
+    {
+        "prefix": "I like turning",
+        "highlight": "ideas",
+        "mid": "into",
+        "highlight2": "real",
+        "suffix": "things"
+    }
+]
