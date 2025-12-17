@@ -166,6 +166,17 @@
     "visible": true
   },
   {
+    "thumbnail": "/images/projects/movies.png",
+    "title": "Movie App",
+    "role": "Frontend Developer",
+    "description": "Small App for watch movies and series",
+    "skills": ["React", "Remix", "HTML5", "CSS3", "Javascript", "TMDB APIs"],
+    "live": "https://webghoul-movie.vercel.app/",
+    "github": "https://github.com/web-ghoul/movie-app",
+    "scale": "Small",
+    "visible": true
+  },
+  {
     "thumbnail": "/images/projects/calculator.png",
     "title": "webGhoul Calc.",
     "role": "Frontend Developer",

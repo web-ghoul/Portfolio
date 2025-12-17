@@ -12,8 +12,9 @@
   ],
   "frameworks_libraries": [
     "Next.js",
-    "Nest.js",
     "React",
+    "Remix",
+    "Nest.js",
     "Express.js",
     "Flask",
     "Laravel",
