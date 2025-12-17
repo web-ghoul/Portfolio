@@ -37,7 +37,6 @@ const Header = () => {
                         </Link>
                     </li>
                 </ul>
-                {/* <LangSwitch /> */}
                 <ModeToggle />
             </nav>
         </header>

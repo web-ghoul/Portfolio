@@ -1,16 +1,18 @@
 {
-    "title_prefix": "Mahmoud Salama is a",
-    "typing_sequence": [
-        "Frontend Developer",
-        2000,
-        "Backend Developer",
-        2000,
-        "Web Developer",
-        2000,
-        "Software Engineer",
-        2000
-    ],
-    "description": "He crafts responsive websites where technologies meet creativity",
-    "button_text": "Contact me!!",
-    "button_link": "/contact"
+  "title_prefix": "Mahmoud Salama is a",
+  "typing_sequence": [
+    "Frontend Developer",
+    2000,
+    "Backend Developer",
+    2000,
+    "Web Developer",
+    2000,
+    "Software Engineer",
+    2000
+  ],
+  "description": "He crafts responsive websites where technologies meet creativity",
+  "resume_button": "Resume",
+  "contact_button": "Contact me!!",
+  "resume_button_link": "./Mahmoud-Salama-Resume.pdf",
+  "contact_button_link": "/contact"
 }

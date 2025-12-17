@@ -1,9 +1,10 @@
 'use client'
 import PrimaryButton from "@/src/components/Buttons/PrimaryButton"
+import SecondaryButton from "@/src/components/Buttons/SecondaryButton"
 import WebGhoulCard from "@/src/components/webGhoulCard/WebGhoulCard"
 import DotsIcon from "@/src/icons/DotsIcon"
+import DownloadIcon from "@/src/icons/DownloadIcon"
 import { TypeAnimation } from "react-type-animation"
-
 import data from "../../data/hero.json"
 
 const HeroSection = () => {
@@ -22,9 +23,17 @@ const HeroSection = () => {
                 </h1>
 
                 <p className="text-gray-400">{data.description}</p>
-                <PrimaryButton link={data.button_link} className="w-fit max-mobile:m-auto">
-                    {data.button_text}
-                </PrimaryButton>
+                <div className="flex justify-start items-center gap-4">
+                    <a href={data.resume_button_link} download={"mahmoud_salama_cv.pdf"}>
+                        <SecondaryButton className="w-fit max-mobile:m-auto">
+                            {data.resume_button}
+                            <DownloadIcon />
+                        </SecondaryButton>
+                    </a>
+                    <PrimaryButton link={data.contact_button_link} className="w-fit max-mobile:m-auto">
+                        {data.contact_button}
+                    </PrimaryButton>
+                </div>
             </div>
 
             {/* <div className="relative grid justify-end items-center content-center h-full max-mobile:m-auto">
