@@ -5,6 +5,7 @@ import Links from "@/src/components/Links/Links";
 import type { Metadata } from "next";
 import { Fira_Code } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "@/src/components/theme-provider";
 
 const firaCode = Fira_Code({
   variable: "--font-fira-code",
@@ -22,15 +23,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${firaCode.variable} antialiased`}
       >
-        <Header />
-        <Links />
-        {children}
-        <Footer />
-        <MenuBar />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Header />
+          <Links />
+          {children}
+          <Footer />
+          <MenuBar />
+        </ThemeProvider>
       </body>
     </html>
   );

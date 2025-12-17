@@ -1,10 +1,19 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 * {
   box-sizing: border-box;
 }
 
 :root {
+  --background: #fff;
+  --foreground: #000;
+  --primary: #4783c7;
+  --secondary: #f62f2f;
+  --primary_border: #000;
+}
+
+.dark {
   --background: #000;
   --foreground: #fff;
   --primary: #4783c7;
@@ -111,6 +120,14 @@ nav ul li {
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary);
   border-radius: 100px;
+}
+
+.comet-shadow {
+  box-shadow: rgba(0, 0, 0, 0.01) 0px 520px 146px 0px, rgba(0, 0, 0, 0.04) 0px 333px 133px 0px, rgba(0, 0, 0, 0.1) 0px 83px 83px 0px, rgba(0, 0, 0, 0.1) 0px 21px 46px 0px;
+}
+
+.dark .comet-shadow {
+  box-shadow: none;
 }
 
 @media (max-width:1440px) {

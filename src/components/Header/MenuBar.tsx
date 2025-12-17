@@ -12,16 +12,16 @@ const MenuBar = () => {
     return (
         <nav className='hidden max-mobile:grid grid-cols-4 justify-stretch items-center gap-2 sticky py-3 bg-background border-t border-primary_border z-1000 -bottom-1 contain'>
             <MenuItem link={`${process.env.NEXT_PUBLIC_HOME_ROUTE}`} title={"Home"} >
-                <HomeIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_HOME_ROUTE}` ? "text-white w-5.5 max-small:w-5 font-medium" : "text-gray-400 w-5 max-small:w-4.5"}`} />
+                <HomeIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_HOME_ROUTE}` ? "text-foreground w-5.5 max-small:w-5 font-medium" : "text-gray-500 dark:text-gray-400 w-5 max-small:w-4.5"}`} />
             </MenuItem>
             <MenuItem link={`${process.env.NEXT_PUBLIC_WORKS_ROUTE}`} title={"Works"} >
-                <FolderIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_WORKS_ROUTE}` ? "text-white w-5.5 max-small:w-5 font-medium" : "text-gray-400 w-5 max-small:w-4.5"}`} />
+                <FolderIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_WORKS_ROUTE}` ? "text-foreground w-5.5 max-small:w-5 font-medium" : "text-gray-500 dark:text-gray-400 w-5 max-small:w-4.5"}`} />
             </MenuItem>
             <MenuItem link={`${process.env.NEXT_PUBLIC_ABOUT_ROUTE}`} title={"About"} >
-                <LogoIcon theme={pathname === `${process.env.NEXT_PUBLIC_ABOUT_ROUTE}` ? "light" : "dark"} className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_ABOUT_ROUTE}` ? "text-white w-5.5 max-small:w-5 font-medium" : "text-gray-400 w-5 max-small:w-4.5"}`} />
+                <LogoIcon theme={pathname === `${process.env.NEXT_PUBLIC_ABOUT_ROUTE}` ? "light" : "dark"} className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_ABOUT_ROUTE}` ? "text-foreground w-5.5 max-small:w-5 font-medium" : "text-gray-500 dark:text-gray-400 w-5 max-small:w-4.5"}`} />
             </MenuItem>
             <MenuItem link={`${process.env.NEXT_PUBLIC_CONTACT_ROUTE}`} title={"Contact"} >
-                <PhoneIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_CONTACT_ROUTE}` ? "text-white w-5.5 max-small:w-5 font-medium" : "text-gray-400 w-5 max-small:w-4.5"}`} />
+                <PhoneIcon className={`h-auto m-auto ${pathname === `${process.env.NEXT_PUBLIC_CONTACT_ROUTE}` ? "text-foreground w-5.5 max-small:w-5 font-medium" : "text-gray-500 dark:text-gray-400 w-5 max-small:w-4.5"}`} />
             </MenuItem>
         </nav>
     )
