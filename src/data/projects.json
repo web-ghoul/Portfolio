@@ -3,7 +3,7 @@
     "thumbnail": "/images/projects/sabaa.png",
     "title": "SABAA",
     "role": "Front End Developer",
-    "description": "Application to Manage Employee of Companies in Dubai , login email is 'admin@gmail.com' and password is '123123123'",
+    "description": "Application to Manage Employee of Companies in Dubai , login email is 'admin@sabaa.com' and password is 'admin123'",
     "skills": [
       "React",
       "Typescript",
@@ -13,7 +13,7 @@
       "React Hook Form",
       "Yup"
     ],
-    "live": "https://sabaatyping.com",
+    "live": "https://sabaa-webghoul.vercel.app",
     "github": "",
     "scale": "Large",
     "visible": true
