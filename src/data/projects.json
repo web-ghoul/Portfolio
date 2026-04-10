@@ -2,7 +2,7 @@
   {
     "thumbnail": "/images/projects/sabaa.png",
     "title": "SABAA",
-    "role": "Front End Developer",
+    "role": "Frontend Developer",
     "description": "Application to Manage Employee of Companies in Dubai , login email is 'admin@sabaa.com' and password is 'admin123'",
     "skills": [
       "React",
@@ -21,7 +21,7 @@
   {
     "thumbnail": "/images/projects/lareino.png",
     "title": "Lareino",
-    "role": "Front End Developer",
+    "role": "Frontend Developer",
     "description": "Application to Manage Stores of Traders.",
     "skills": [
       "React",
@@ -37,10 +37,30 @@
     "scale": "Large",
     "visible": true
   },
+   {
+    "thumbnail": "/images/projects/medicrub.png",
+    "title": "Medicrub",
+    "role": "Frontend Developer",
+    "description": "Application to Manage Drivers of Patients.",
+    "skills": [
+      "React",
+      "Material UI",
+      "Tailwind",
+      "Redux Toolkit",
+      "Formik",
+      "Yup",
+      "Chartsjs",
+      "React-Leaflet"
+    ],
+    "live": "https://medicrub-webghoul.vercel.app/dashboard",
+    "github": "https://github.com/web-ghoul/Medicrub",
+    "scale": "Medium",
+    "visible": true
+  },
   {
     "thumbnail": "",
     "title": "Dagagino",
-    "role": "Front End Developer",
+    "role": "Frontend Developer",
     "description": "Application to Sell Chicken feed for Customers.",
     "skills": [
       "Next",
@@ -59,7 +79,7 @@
   {
     "thumbnail": "/images/projects/alcazar.png",
     "title": "AlCazar",
-    "role": "MERN Stack Developer",
+    "role": "MERN-Stack Developer",
     "description": "Application to Sell Furnitures for Customers.",
     "skills": [
       "Next",
@@ -129,7 +149,7 @@
   },
   {
     "thumbnail": "/images/projects/qader.png",
-    "role": "MERN Stack Developer",
+    "role": "MERN-Stack Developer",
     "title": "Qader",
     "description": "Landing Page For Qader Company",
     "skills": [
@@ -148,7 +168,7 @@
   },
   {
     "thumbnail": "/images/projects/power_treatment.png",
-    "role": "Forntend Developer",
+    "role": "Frontend Developer",
     "title": "Power Treatment",
     "description": "Landing Page For Power Treatment Company",
     "skills": [
