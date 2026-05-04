@@ -19,25 +19,26 @@
     "visible": true
   },
   {
-    "thumbnail": "/images/projects/lareino.png",
-    "title": "Lareino",
-    "role": "Frontend Developer",
-    "description": "Application to Manage Stores of Traders.",
+    "thumbnail": "/images/projects/success_spirit_dashboard.png",
+    "title": "Success Spirit Dashboard",
+    "role": "Full-Stack Developer",
+    "description": "Application to Manage Success Spirit News , Galleries , School Fees , ... | Admin Account : admin@success-spirit.com  , password : 123123123",
     "skills": [
       "React",
       "Typescript",
-      "Material UI",
-      "Tailwind",
-      "Redux Toolkit",
       "Formik",
-      "Yup"
+      "Yup",
+      "Redux Toolkit",
+      "Zustand",
+      "Laravel",
+      "MySQL"
     ],
-    "live": "https://lareino.com",
+    "live": "https://dashboard-dev.success-spirit.com",
     "github": "",
     "scale": "Large",
     "visible": true
   },
-   {
+  {
     "thumbnail": "/images/projects/medicrub.png",
     "title": "Medicrub",
     "role": "Frontend Developer",
@@ -55,6 +56,25 @@
     "live": "https://medicrub-webghoul.vercel.app/dashboard",
     "github": "https://github.com/web-ghoul/Medicrub",
     "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/lareino.png",
+    "title": "Lareino",
+    "role": "Frontend Developer",
+    "description": "Application to Manage Stores of Traders.",
+    "skills": [
+      "React",
+      "Typescript",
+      "Material UI",
+      "Tailwind",
+      "Redux Toolkit",
+      "Formik",
+      "Yup"
+    ],
+    "live": "https://lareino.com",
+    "github": "",
+    "scale": "Large",
     "visible": true
   },
   {
@@ -134,6 +154,25 @@
     "live": "https://webghoul-blogging-app.web.app",
     "github": "https://github.com/web-ghoul/webGhoul-Blogging",
     "scale": "Medium",
+    "visible": true
+  },
+  {
+    "thumbnail": "/images/projects/success_spirit.png",
+    "role": "Full-Stack Developer",
+    "title": "Success Spirit",
+    "description": "Landing Page For Success Spirit Schools",
+    "skills": [
+      "Next",
+      "React",
+      "Typescript",
+      "Tailwind",
+      "Farmer Motion",
+      "Laravel",
+      "MySQL"
+    ],
+    "live": "https://success-spirit.com",
+    "github": "",
+    "scale": "Landing",
     "visible": true
   },
   {

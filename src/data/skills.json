@@ -2,22 +2,25 @@
   "languages": [
     "HTML5",
     "CSS3",
-    "Sass",
     "Javascript",
     "Typescript",
-    "Node",
+    "PHP",
     "C++",
     "Java",
-    "Python"
+    "Python",
+    "SQL"
   ],
   "frameworks_libraries": [
-    "Next.js",
     "React",
+    "Next.js",
     "Remix",
-    "Nest.js",
+    "Angular",
+    "Vue",
+    "Nuxt.js",
     "Express.js",
-    "Flask",
+    "Nest.js",
     "Laravel",
+    "Flask",
     "QT"
   ],
   "databases": ["MySQL", "PostgreSQL", "SQLite", "MongoDB"],
@@ -31,6 +34,7 @@
     "Postman",
     "Notion",
     "ChatGPT",
-    "Claude"
+    "Claude",
+    "Anitgravity"
   ]
 }

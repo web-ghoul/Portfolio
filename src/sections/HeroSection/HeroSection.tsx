@@ -24,7 +24,7 @@ const HeroSection = () => {
 
                 <p className="text-gray-400">{data.description}</p>
                 <div className="flex justify-start items-center gap-4 max-mobile:justify-center max-mobile:m-auto">
-                    <a href={data.resume_button_link} download={"mahmoud_salama_cv.pdf"}>
+                    <a href={data.resume_button_link} download={"mahmoud_salama_resume.pdf"}>
                         <SecondaryButton>
                             {data.resume_button}
                             <DownloadIcon className={`w-5 h-auto max-laptop:w-4.5 max-tablet:w-4 max-mobile:w-3.5 max-small:w-3`} />
